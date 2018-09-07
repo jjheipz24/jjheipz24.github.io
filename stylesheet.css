@@ -1,0 +1,30 @@
+html {
+    /*background-color: #50C6D1;*/
+}
+
+/* Creates navy blue background box around content*/
+#container {
+    background-color: #151742;
+    opacity: ;
+    margin: 0 auto;
+    width: 70%;
+    height: 100%;
+    padding: 20px 20px 20px 20px;
+
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 25%;
+    width: 25%;
+}
