@@ -1,0 +1,1086 @@
+html {
+    font-family: 'Asap', sans-serif;
+    font-size: 16px;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    position: relative;
+
+}
+
+h2 {
+    font-weight: 700;
+    color: #2ca6a4;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    margin: 50px;
+    text-shadow: 1px 2px #a5abaf;
+}
+
+/**********************************************************
+
+NAVIGATION BAR
+** some CSS from W3Schools Tutorial **
+** https://www.w3schools.com/howto/howto_js_dropdown.asp **
+
+***********************************************************/
+#navbar {
+    overflow: hidden;
+    font-weight: 600;
+    padding-bottom: 0px;
+    border-bottom: 2px solid #2ca6a4;
+}
+
+.logo {
+    float: left;
+    margin-left: 1.5%;
+    margin-top: 20px;
+}
+
+.page-nav {
+    margin-right: 2%;
+    margin-top: 70px;
+}
+
+/*Page links in nav bar -- includes "About" dropdown menu*/
+.page-nav a,
+.about {
+    float: right;
+    font-size: 24px;
+    color: #2ca6a4;
+    text-align: center;
+    padding: 5px 40px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0;
+
+}
+
+#navbar a:hover,
+.about:hover {
+    opacity: .8;
+}
+
+.logo:hover,
+.resume:hover,
+.projects:hover,
+.about:hover {
+    transform: scale(1.1);
+}
+
+/* dropdown content links */
+.about-content {
+    display: none;
+    position: absolute;
+    background-color: #a5abaf;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 30px;
+
+}
+
+.about-content a {
+    float: none;
+    color: #2d2d2a;
+    padding: 16px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+
+}
+
+#me:hover,
+#contact:hover {
+    background-color: #e0cebf;
+    border: 1px solid #82d4bb;
+
+}
+
+.show {
+    display: block;
+}
+
+#nav-mobile {
+    display: none;
+}
+
+
+/*********** RESPONSIVE *************/
+/*** makes regular nav bar "disappear" and creates hamburger nav bar ***/
+@media screen and (max-width: 800px) {
+    #navbar {
+        display: none;
+    }
+
+    #nav-mobile {
+        display: contents;
+    }
+
+    .hamburger {
+        background: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #2d2d2a;
+        padding: 2vw;
+        cursor: pointer;
+        z-index: 10000000;
+    }
+
+    #menu-mobile {
+        z-index: 10000;
+        width: 100%;
+        font-weight: bold;
+        background-color: #a5abaf;
+        position: absolute;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    /* #menu-mobile ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    } */
+
+    #menu-mobile a {
+        display: block;
+        padding: 15px 0 15px 0;
+        border-bottom: 1px solid black;
+        text-decoration: none;
+        color: #2d2d2a;
+        text-transform: uppercase;
+    }
+
+    #menu-mobile a:hover {
+        display: block;
+        background: #e0cebf;
+        padding: 15px 0 15px 0;
+        border-bottom: 1px solid black;
+    }
+
+}
+
+/**********************************************************
+
+MAIN PAGE BANNER
+** downward arrow from Flat Icon **
+
+***********************************************************/
+
+header {
+    width: 100%;
+    margin: 0;
+    background-color: #2ca6a4;
+    color: white;
+    padding-bottom: 10px;
+}
+
+#banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#headshot {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border: 2.5px solid white;
+    margin-top: 30px
+}
+
+/* Adds spacing between top of banner and picture */
+
+
+h1 {
+    font-weight: 700;
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+#banner-content h4 {
+    font-weight: 500;
+    font-size: 25px;
+    margin-top: -20px;
+    margin-bottom: 65px;
+}
+
+#down-arrow {
+    cursor: pointer;
+}
+
+#down-arrow:hover {
+    transform: scale(1.08);
+}
+
+/*********** RESPONSIVE *************/
+/*** scales the banner text down and adjusts sizing of downward arrow ***/
+@media only screen and (max-width: 650px) {
+    h1 {
+        font-size: 8vw;
+        margin-top: 1vw;
+    }
+
+    #banner-content h4 {
+        font-size: 4vw;
+    }
+
+    #down-arrow {
+        width: 10vw;
+    }
+}
+
+/**********************************************************
+
+PROJECTS
+
+***********************************************************/
+
+
+.project-sqrs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5rem;
+    max-width: 65vw;
+    margin: .5rem auto;
+    margin-bottom: 200px;
+}
+
+.project-sqrs img {
+    display: block;
+    width: 100%;
+    border: 2px solid #2ca6a4;
+    border-radius: 5%;
+}
+
+/* Image overlay effect used and modified from Arnaud Balland from Codepen.io
+ * https://codepen.io/ArnaudBalland/pen/vGZKLr
+*/
+.wrap {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.wrap .overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    /* -webkit and -moz allows browser support for transformation on multiple browsers
+    */
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.wrap:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.pic-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.1s ease-in-out 0s;
+    -moz-transition: all 0.1s ease-in-out 0s;
+    transition: all 0.1s ease-in-out 0s;
+
+}
+
+.wrap:hover .pic-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.fadein-top {
+    top: 20%;
+}
+
+.pic-details h3 {
+    font-weight: 500;
+    font-size: 2em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+/**********************************************************
+
+INDIVIDUAL PROJECTS
+
+***********************************************************/
+.content-horz {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content-vert {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.first-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 0;
+}
+
+.proj-pic {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+
+}
+
+.link-img {
+    color: #2ca6a4;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 2.5vw;
+    width: 100%;
+}
+
+
+.task-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.task-text {
+    width: 25vw;
+}
+
+.solution-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+}
+
+.sol-text {
+    width: 50%;
+    padding-left: 50px;
+}
+
+.solution {
+    padding: 2px 5.5vw;
+}
+
+.task,
+.solution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 48px;
+    background-color: #2ca6a4;
+    color: white;
+    margin: 0;
+
+}
+
+.task-text,
+.sol-text {
+    line-height: 24px;
+
+}
+
+/*********** RESPONSIVE *************/
+/*** makes all project pages vertical ***/
+@media only screen and (max-width: 900px) {
+    .content-horz {
+        padding-bottom: 20vh;
+    }
+
+    .content-vert {
+        width: 80%;
+        padding-bottom: 20vh;
+    }
+
+    #vert-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .proj-pic {
+        padding-bottom: 2vh;
+    }
+
+    .first-part,
+    .solution-section {
+        flex-direction: column;
+        padding: 2vh;
+    }
+
+    .task-text,
+    .sol-text {
+        width: 100%;
+    }
+
+    .solution-section {
+        padding-bottom: 20vh;
+    }
+
+    .solution {
+        width: 85%;
+    }
+
+    .sol-text {
+        padding: 0;
+    }
+
+}
+
+/**********************************************************
+
+RESUME
+
+***********************************************************/
+
+/*****************
+ Heading of resume
+******************/
+.resume-main {
+    color: #2ca6a4;
+}
+
+.resume-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#jj {
+    font-size: 38pt;
+}
+
+#tagline {
+    font-size: 18pt;
+    margin-top: -37px;
+    margin-bottom: 25px;
+}
+
+#profile {
+    font-weight: 400;
+    font-size: 12pt;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*****************
+ Contact of resume
+******************/
+
+.contact-strip {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    border-top: 2px solid #2ca6a4;
+    border-bottom: 2px solid #2ca6a4;
+    margin: 20px 50px;
+}
+
+.contact-piece {
+    font-weight: 600;
+}
+
+/******************
+ Sections of Resume
+*******************/
+
+.resume-titles {
+    font-weight: 700;
+    font-size: 16pt;
+    margin: 0 50px;
+    border-bottom: 1px solid #2ca6a4;
+}
+
+.education,
+.work-exp,
+.prjcts,
+.skills,
+.xtra {
+    margin: 20px 50px;
+
+}
+
+#pdf {
+    font-size: 10pt;
+    margin-left: 50px;
+}
+
+#school,
+#major {
+    font-weight: 600;
+}
+
+.title-names {
+    font-size: 12pt;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.title-info {
+    font-weight: 400;
+    font-size: 10pt;
+    font-style: italic;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: -10px;
+}
+
+.programming,
+.software {
+    display: flex;
+    flex-direction: column;
+}
+
+#programming-title,
+#software-title {
+    font-weight: 600;
+    font-size: 12pt;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+li {
+    margin-left: -25px;
+}
+
+.xtra {
+    margin-bottom: 200px;
+}
+
+/* Sets layout of printed page */
+@page {
+    size: 8.5in 11in portrait;
+}
+
+/* Styles appearing on printed document ONLY */
+@media print {
+
+    #navbar,
+    footer,
+    #pdf {
+        display: none;
+    }
+
+    body {
+        margin: 1cm;
+    }
+
+    .contact-strip,
+    .resume-titles,
+    .education,
+    .work-exp,
+    .prjcts,
+    .skills,
+    .xtra {
+        margin: 20px 0;
+    }
+}
+
+/*********** RESPONSIVE *************/
+/*** slight adjustments to contact strip and pdf link. Also, spacing between the two skills lists ***/
+@media only screen and (max-width: 800px) {
+
+    .contact-piece,
+    #pdf {
+        font-size: 2vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+
+    #programming {
+        padding-right: 5vw;
+    }
+
+}
+
+/**********************************************************
+
+WHO AM I
+** right arrow icon from Font Awesome **
+
+***********************************************************/
+
+#about-self {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 25vh;
+}
+
+#about-self p {
+    color: #2d2d2a;
+    font-weight: 500;
+    width: 30vw;
+    line-height: 24px;
+    padding-left: 24px;
+
+
+}
+
+#about-text #contact-link {
+    text-align: right;
+}
+
+#contact-link a {
+    text-decoration: none;
+    color: #2ca6a4;
+}
+
+/*********** RESPONSIVE *************/
+/*** creates vertical about section ***/
+@media only screen and (max-width: 800px) {
+    #about-self {
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    #about-text p {
+        width: 80%;
+        padding-left: none;
+        margin: 0 auto;
+
+    }
+
+    #mtn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/**********************************************************
+
+CONTACT
+** Formspree.io used to make contact form work **
+** CSS used from Prof. Lawley's "Form" exercise **
+
+***********************************************************/
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*centers form on page*/
+    margin: 0 auto;
+    width: 30vw;
+    /*to see outline of form*/
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #2ca6a4;
+    box-shadow: -2px 4px 3px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50vh;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+form div + div {
+    margin-top: 2em;
+}
+
+label {
+    /*makes all labels equally sized and properly aligned*/
+    width: 9vw;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+input,
+textarea {
+    /*gives text field sans serif font*/
+    font: 1em sans-serif;
+    /*same size text fields*/
+    width: 20vw;
+    box-sizing: border-box;
+
+}
+
+input:focus,
+textarea:focus {
+    /*highlight on active elements*/
+    border: 1px;
+    border-color: #82d4bb;
+}
+
+textarea {
+    /*aligns multiline text w labels*/
+    vertical-align: top;
+    /*breathing room*/
+    height: 5em;
+}
+
+
+/*********** RESPONSIVE *************/
+@media only screen and(max-width: 800px) {}
+
+
+/**********************************************************
+
+Documentation
+** Slideshow used from W3Schools Tutorial **
+** https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto **
+
+***********************************************************/
+#doc-grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 100px 1fr 40px 1fr 100px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 200px;
+
+}
+
+#process {
+    grid-column: 2/3;
+}
+
+#challenge {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+#challenge-text {
+    grid-column: 2/3;
+}
+
+#above {
+    grid-column: 2/3;
+}
+
+#above-text {
+    grid-column: 4/5;
+}
+
+#source {
+    grid-column: 4/5;
+}
+
+#source-text {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.doc-headings {
+    text-align: center;
+}
+
+.doc-headings,
+.doc-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doc-headings p {
+    font-weight: 500;
+    font-size: 48px;
+    background-color: #2ca6a4;
+    color: white;
+    padding: 20px;
+
+}
+
+.doc-text {
+    line-height: 24px;
+}
+
+#source-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#source-text li {
+    padding: 1vw;
+
+}
+
+/**********
+ Slideshow
+**********/
+
+.slide-container {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    grid-column: 4/5;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    vertical-align: middle;
+}
+
+/* Caption text */
+.text {
+    color: #2ca6a4;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: relative;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text */
+.numbertext {
+    color: #2ca6a4;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 10 2px;
+    background-color: #a5abaf;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    grid-column: 4/5;
+}
+
+
+.active {
+    background-color: #2ca6a4;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    -moz-animation-name: fade;
+    -moz-animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*********** RESPONSIVE *************/
+/*** creates a single column of content ***/
+@media only screen and (max-width: 800px) {
+    #doc-grid {
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-rows: auto;
+        padding-bottom: 50vh;
+        margin: 0 auto;
+    }
+
+    .text {
+        font-size: 11px;
+    }
+
+    .slide-container {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    #process {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    #challenge {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    #challenge-text {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    #above {
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+
+    #above-text {
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+
+    #source {
+        grid-column: 2/3;
+        grid-row: 7/8;
+    }
+
+    #source-text {
+        grid-column: 2/3;
+        grid-row: 8/9;
+    }
+
+
+}
+
+/**********************************************************
+
+FOOTER
+** icons used from Font Awesome **
+
+***********************************************************/
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #a5abaf;
+    margin: 0;
+    line-height: 15px;
+    font-weight: 400;
+    color: #2d2d2a;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.left a,
+.center a,
+.right a {
+    color: #1E706F;
+    /*darker shade of green used to look the same as the other green on the gray footer*/
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+
+.icons a {
+    padding: 5px;
+}
+
+.icons i:hover {
+    transform: scale(1.1);
+}
+
+/*********** RESPONSIVE *************/
+/*** makes footer vertical ***/
+@media only screen and (max-width: 650px) {
+    body {
+        padding-bottom: 20vh;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 20px;
+
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left,
+    .center,
+    .right {
+        margin: 10px;
+        text-align: center;
+    }
+
+}
