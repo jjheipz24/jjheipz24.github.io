@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Jin Jin Heipler - Documentation</title>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <section id="navbar">
+
+        <a href="index.html"><img class="logo" src="media/logo-small.png" alt="velociraptor with Jin Jin Heipler written on top"></a>
+        <div class="page-nav">
+
+            <!--Dropdown section of nav bar-->
+            <div class="dropdown">
+                <div class="about" onclick="AboutMenu()">About</div>
+                <div class="about-content" id="dropdownMenu">
+                    <a href="who-am-i.html" title="Me" id="me">Who Am I?</a>
+                    <a href="contact.html" title="Contact" id="contact">Contact</a>
+                </div>
+            </div>
+            <a href="resume.html" title="Resume" class="resume">Resume</a>
+            <a href="index.html#project-heading" title="Home" class="projects">Projects</a>
+        </div>
+
+    </section>
+    <div id="nav-mobile">
+        <!--Hamburger Icon from FontAwesome-->
+        <div class="hamburger"><i class="fas fa-bars fa-3x"></i></div>
+        <div id="menu-mobile">
+
+            <a href="index.html#project-heading">
+                Projects
+            </a>
+            <a href="resume.html">
+                Resume
+            </a>
+            <a href="who-am-i.html">
+                Who Am I?
+            </a>
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+    </div>
+
+
+
+    <h2>About the Site</h2>
+    <main id="doc-grid">
+        <div class="doc-headings" id="process">
+            <p>Process</p>
+        </div>
+        <div class="slide-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 10</div>
+                <img src="media/flowchart.jpg" style="width:100%" alt="flowchart">
+                <div class="text">Flowchart</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 10</div>
+                <img src="media/main-wire.jpg" style="width:100%" alt="Main Wireframe">
+                <div class="text">Main - Wireframe</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 10</div>
+                <img src="media/about-wire.jpg" style="width:100%" alt="Who Am I Wireframe">
+                <div class="text">Who Am I - Wireframe</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 10</div>
+                <img src="media/contact-wire.jpg" style="width:100%" alt="Contact Wireframe">
+                <div class="text">Contact - Wireframe</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 10</div>
+                <img src="media/proj-wire.jpg" style="width:100%" alt="Project Wireframe">
+                <div class="text">Project - Wireframe</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 10</div>
+                <img src="media/main1-mock.png" style="width:100%" alt="Main Concept 1 Mockup">
+                <div class="text">Main Concept 1 - Mockup</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 10</div>
+                <img src="media/main2-mock.png" style="width:100%" alt="Main Concept 2 Mockup">
+                <div class="text">Main Concept 2 - Mockup</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">8 / 10</div>
+                <img src="media/about-mock.png" style="width:100%" alt="About Mockup">
+                <div class="text">About - Mockup</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">9 / 10</div>
+                <img src="media/contact-mock.png" style="width:100%" alt="Contact Mockup">
+                <div class="text">Contact - Mockup</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">10 / 10</div>
+                <img src="media/proj-mock.png" style="width:100%" alt="Project Mockup">
+                <div class="text">Project - Mockup</div>
+            </div>
+
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <div class="doc-headings" id="challenge">
+            <p>Challenges</p>
+        </div>
+        <p class="doc-text" id="challenge-text">Working on this project, I actually encountered less challenges than I expected. However, there were two aspects that were particular tricky. The first was getting the hamburger navigation to appear and work when the window hit a certain size. I spent a long time figuring out how to get it to work, only to realize (from the eyes of Henry) that I made a simple typo, which kept it from working properly. Before Henry looked at it, I was trying to look at W3Schools to see if it could help me.
+            <br /><br />
+            The second I faced was making a responsive form. I spent far too long going about setting up the form in a way that would make it responsive (like using flexbox), but nothing I did seemed to work. Even now, my contact form is not responsive, and I'm out of time to fix it (but I will go back and fix it when I have more time).</p>
+        <div class="doc-headings" id="above">
+            <p>Above and Beyond</p>
+        </div>
+        <p class="doc-text" id="above-text">For this site, one thing I did that I believe was above and beyond was the implementation of JQuery. Even though it was a very simple usage of it to make the downward arrow do a smooth scroll and create a hamburger dropdown menu effect, it was not required for this project in general. I originally had no idea how I was going to accomplish either. After getting an extension on this project and learning about JQuery in class, I decided I should use this knowledged I gained in the extra time I got to add some extra "bells and whistles" to my site.</p>
+        <div class="doc-headings" id="source">
+            <p>Source Info</p>
+        </div>
+        <ul class="doc-text" id="source-text">
+            <li><a href="https://fonts.google.com/specimen/Asap">ASAP Typeface from Google Fonts</a></li>
+            <li><a href="https://developers.google.com/speed/libraries/">JQuery Library</a></li>
+            <li><a href="https://www.w3schools.com/howto/howto_js_dropdown.asp">
+                    Dropdown Navigation Menu Tutorial by W3Schools
+                </a></li>
+            <li><a href="https://www.w3schools.com/html/html_links.asp">
+                    Bookmark Links Tutorial by W3Schools
+                </a>
+            </li>
+            <li><a href="https://www.fontawesome.com">Hamburger, Right Arrow, and Social Media Icons from Font Awesome</a></li>
+            <li>Downward Arrow Icon Made By <a href="https://www.flaticon.com/authors/lucy-g" title="Lucy G">Lucy G</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></li>
+            <li><a href="https://codepen.io/jvondoom/pen/VvbrdY">Smooth Scrolling by Juan von Doom on Codepen.io</a></li>
+            <li><a href=" https://codepen.io/g13nn/pen/eHGEF">Script for Hamburger Menu from Glenn Smith on Codepen.io</a></li>
+            <li><a href="https://codepen.io/ArnaudBalland/pen/vGZKLr">Image Overlay Effect from Arnaud Balland from Codepen.io</a></li>
+            <li><a href="https://www.formspree.io">Formspree.io and CSS from Prof. Lawley's "Form" Exercise for Contact Form</a></li>
+            <li><a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto">Automatic Slideshow from W3Schools</a></li>
+        </ul>
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="left">
+                <p>How did I make this?</p>
+                <p>Find out <a href="documentation.html" title="Documentation">here
+                    </a></p>
+            </div>
+            <div class="center">
+                <p>Questions? Email me!</p>
+                <a href="mailto:heipler.jj@gmail.com" title="Email">heipler.jj&commat;gmail.com</a>
+            </div>
+            <div class="right">
+                <p>Social Media</p>
+                <!--ICONS FROM FONTAWESOME.COM-->
+                <div class="icons">
+                    <a href="https://www.facebook.com/jjheipz" title="Facebook Link"> <i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="https://www.instagram.com/jjheipz24" title="Instagram Link"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/jjheipler" title="LinkedIn Link">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                    <a href="https://www.github.com/jjheipz24" title="GitHub Link"><i class="fab fa-github-square fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        /* Script for dropdown menu from W3Schools
+         * When user clicks button, content toggles between shown
+         * and hidden */
+        function AboutMenu() {
+            document.getElementById("dropdownMenu").classList.toggle("show");
+        }
+
+        //closes dropdown if click outside it
+        window.onclick = function(e) {
+            if (!e.target.matches('.about')) {
+                var myDropdown = document.getElementById("dropdownMenu");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+        /* Script for automatic slideshow from W3Schools
+         * Cycles through 10 images automatically every 2 seconds */
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        /* Script for hamburger menu used from Glenn Smith on Codepen.io
+         * https://codepen.io/g13nn/pen/eHGEF
+         * Hamburger-style menu for navigation
+         */
+        $(document).ready(function() {
+
+            $("#menu-mobile").hide();
+            $(".hamburger").click(function() {
+                $("#menu-mobile").slideToggle("slow", function() {
+
+                });
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>
