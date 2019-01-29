@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Social Media Burst</title>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <section id="navbar">
+
+        <a href="../index.html"><img class="logo" src="../media/logo-small.png" alt="velociraptor with Jin Jin Heipler written on top"></a>
+        <div class="page-nav">
+
+            <!--Dropdown section of nav bar-->
+            <div class="dropdown">
+                <div class="about" onclick="AboutMenu()">About</div>
+                <div class="about-content" id="dropdownMenu">
+                    <a href="../who-am-i.html" title="Me" id="me">Who Am I?</a>
+                    <a href="../contact.html" title="Contact" id="contact">Contact</a>
+                </div>
+            </div>
+            <a href="../resume.html" title="Resume" class="resume">Resume</a>
+            <a href="../index.html#project-heading" title="Home" class="projects">Projects</a>
+        </div>
+
+    </section>
+    <div id="nav-mobile">
+        <!--Hamburger Icon from FontAwesome-->
+        <div class="hamburger"><i class="fas fa-bars fa-3x"></i></div>
+        <div id="menu-mobile">
+
+            <a href="../index.html#project-heading">
+                Projects
+            </a>
+            <a href="../resume.html">
+                Resume
+            </a>
+            <a href="../who-am-i.html">
+                Who Am I?
+            </a>
+            <a href="../contact.html">
+                Contact
+            </a>
+
+        </div>
+    </div>
+
+    <!--Main Content-->
+    <div class="content-vert">
+        <h2> Social Media Burst </h2>
+        <div class="first-part">
+            <div class="link-img"><a href="https://jjheipz24.github.io/PortfolioProjects/InteractiveFinal/index.html"><img id="vert-img" src="projectpics/interactive/interactive_screen.png" alt="example of project"></a>
+                <br />Click on the image to see the program in action!
+            </div>
+
+            <div class="task-section">
+                <p class="task">TASK</p>
+                <p class="task-text">For my final project in my Interactive Design and Algorithmic Problem Solving II class, I was instructed to combine concepts that we learned that semester to create "something" interactive.</p>
+            </div>
+        </div>
+
+        <div class="solution-section">
+            <p class="solution">SOLUTION</p>
+            <p class="sol-text">I decided to create a program that simulated a phone screen, except when the user hovers over the icon, the pixels of the icon get replaced with a bunch of words to create the icon. When clicked, the words break apart to reveal the home screen of the app. In order to get back to the home screen, the user just has to click and drag upwards to simulate the swiping away of the app.
+                <br />
+                <br />
+                Technology used: <em>Javascript, p5.js, p5.DOM</em> </p>
+        </div>
+
+    </div>
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="left">
+                <p>How did I make this?</p>
+                <p>Find out <a href="documentation.html" title="Documentation">here
+                    </a></p>
+            </div>
+            <div class="center">
+                <p>Questions? Email me!</p>
+                <a href="mailto:heipler.jj@gmail.com" title="Email">heipler.jj&commat;gmail.com</a>
+            </div>
+            <div class="right">
+                <p>Social Media</p>
+                <!--ICONS FROM FONTAWESOME.COM-->
+                <div class="icons">
+                    <a href="https://www.facebook.com/jjheipz" title="Facebook Link"> <i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="https://www.instagram.com/jjheipz24" title="Instagram Link"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/jjheipler" title="LinkedIn Link">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                    <a href="https://www.github.com/jjheipz24" title="GitHub Link"><i class="fab fa-github-square fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        /* Script for dropdown menu from W3Schools (see CSS for link)
+         * When user clicks button, content toggles between shown
+         * and hidden */
+        function AboutMenu() {
+            document.getElementById("dropdownMenu").classList.toggle("show");
+        }
+
+        //closes dropdown if click outside it
+        window.onclick = function(e) {
+            if (!e.target.matches('.about')) {
+                var myDropdown = document.getElementById("dropdownMenu");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+        /* Script for hamburger menu used from Glenn Smith on Codepen.io
+         * https://codepen.io/g13nn/pen/eHGEF
+         * Hamburger-style menu for navigation
+         */
+        $(document).ready(function() {
+
+            $("#menu-mobile").hide();
+            $(".hamburger").click(function() {
+                $("#menu-mobile").slideToggle("slow", function() {
+
+                });
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>

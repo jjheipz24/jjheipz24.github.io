@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Fruity Tootie</title>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <section id="navbar">
+
+        <a href="../index.html"><img class="logo" src="../media/logo-small.png" alt="velociraptor with Jin Jin Heipler written on top"></a>
+        <div class="page-nav">
+
+            <!--Dropdown section of nav bar-->
+            <div class="dropdown">
+                <div class="about" onclick="AboutMenu()">About</div>
+                <div class="about-content" id="dropdownMenu">
+                    <a href="../who-am-i.html" title="Me" id="me">Who Am I?</a>
+                    <a href="../contact.html" title="Contact" id="contact">Contact</a>
+                </div>
+            </div>
+            <a href="../resume.html" title="Resume" class="resume">Resume</a>
+            <a href="../index.html#project-heading" title="Home" class="projects">Projects</a>
+        </div>
+
+    </section>
+    <div id="nav-mobile">
+        <!--Hamburger Icon from FontAwesome-->
+        <div class="hamburger"><i class="fas fa-bars fa-3x"></i></div>
+        <div id="menu-mobile">
+
+            <a href="../index.html#project-heading">
+                Projects
+            </a>
+            <a href="../resume.html">
+                Resume
+            </a>
+            <a href="../who-am-i.html">
+                Who Am I?
+            </a>
+            <a href="../contact.html">
+                Contact
+            </a>
+
+        </div>
+    </div>
+
+
+    <!--Main Content-->
+    <div class="content-horz">
+        <h2> Fruity Tootie </h2>
+        <div class="first-part">
+            <img class="proj-pic" src="projectpics/brandmark/brandmark.png" alt="Fruity Tootie Design">
+            <div class="task-section">
+                <p class="task">TASK</p>
+                <p class="task-text">This multi-step project involved taking an image, doing a graphic translation of it, and then turning that graphic translation into a brandmark for a made-up company.</p>
+            </div>
+        </div>
+        <div class="solution-section">
+            <p class="solution">SOLUTION</p>
+            <p class="sol-text">The image I decided to graphically translate was that of a toucan. From there, I decided it would be fitting to make it part of the brandmark for a smoothie company.
+                <br />
+                <br />
+                I chose the name "Fruity Tootie" because I wanted something playful and fun to represent the atmosphere of the smoothie company. I also wanted that playfulness and vibrancy to come across in the brandmark.
+                <br />
+                <br />
+                Technology used: <em>Adobe Illustrator</em>
+            </p>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="left">
+                <p>How did I make this?</p>
+                <p>Find out <a href="documentation.html" title="Documentation">here
+                    </a></p>
+            </div>
+            <div class="center">
+                <p>Questions? Email me!</p>
+                <a href="mailto:heipler.jj@gmail.com" title="Email">heipler.jj&commat;gmail.com</a>
+            </div>
+            <div class="right">
+                <p>Social Media</p>
+                <!--ICONS FROM FONTAWESOME.COM-->
+                <div class="icons">
+                    <a href="https://www.facebook.com/jjheipz" title="Facebook Link"> <i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="https://www.instagram.com/jjheipz24" title="Instagram Link"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/jjheipler" title="LinkedIn Link">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                    <a href="https://www.github.com/jjheipz24" title="GitHub Link"><i class="fab fa-github-square fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        /* Script for dropdown menu from W3Schools (see CSS for link)
+         * When user clicks button, content toggles between shown
+         * and hidden */
+        function AboutMenu() {
+            document.getElementById("dropdownMenu").classList.toggle("show");
+        }
+
+        //closes dropdown if click outside it
+        window.onclick = function(e) {
+            if (!e.target.matches('.about')) {
+                var myDropdown = document.getElementById("dropdownMenu");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+        /* Script for hamburger menu used from Glenn Smith on Codepen.io
+         * https://codepen.io/g13nn/pen/eHGEF
+         * Hamburger-style menu for navigation
+         */
+        $(document).ready(function() {
+
+            $("#menu-mobile").hide();
+            $(".hamburger").click(function() {
+                $("#menu-mobile").slideToggle("slow", function() {
+
+                });
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>
