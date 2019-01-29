@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Jin Jin Heipler - Who Am I?</title>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <section id="navbar">
+
+        <a href="index.html"><img class="logo" src="media/logo-small.png" alt="velociraptor with Jin Jin Heipler written on top"></a>
+        <div class="page-nav">
+
+            <!--Dropdown section of nav bar-->
+            <div class="dropdown">
+                <div class="about" onclick="AboutMenu()">About</div>
+                <div class="about-content" id="dropdownMenu">
+                    <a href="who-am-i.html" title="Me" id="me">Who Am I?</a>
+                    <a href="contact.html" title="Contact" id="contact">Contact</a>
+                </div>
+            </div>
+            <a href="resume.html" title="Resume" class="resume">Resume</a>
+            <a href="index.html#project-heading" title="Home" class="projects">Projects</a>
+        </div>
+
+    </section>
+    <div id="nav-mobile">
+        <!--Hamburger Icon from FontAwesome-->
+        <div class="hamburger"><i class="fas fa-bars fa-3x"></i></div>
+        <div id="menu-mobile">
+
+            <a href="index.html#project-heading">
+                Projects
+            </a>
+            <a href="resume.html">
+                Resume
+            </a>
+            <a href="who-am-i.html">
+                Who Am I?
+            </a>
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+    </div>
+
+
+
+    <main>
+        <h2>About</h2>
+        <article id="about-self">
+            <div id="mtn"><img src="media/mountain-small.png" alt="Picture of me on a mountain"></div>
+            <div id="about-text">
+                <p>My name is Jin Jin Heipler. I'm just a small, non-binary person, adopted from China and raised in Shrewsbury, Massachusetts. I'm currently in my second year and studying New Media Interactive Development at RIT. I chose this major because I wanted something that would allow me to combine my creativity and my programming skills to create exciting experiences. My dream job would involve developing some of the interactive exhibits in museums or at Universal Studios.</p>
+                <br>
+                <p>When I'm not doing schoolwork, you can usually find me in the gym, on the track, or the rugby pitch. I'm a third degree black belt in Tae Kwon Do, sprinter, and rugger. I truly believe that a sound body is a sound mind. I also try to stay active in the LGBTQ+ community and help advocate for change and equal rights.</p>
+                <br>
+                <p id="contact-link"><a href="contact.html">Want to get in touch with me? <i class="fas fa-angle-double-right fa-sm"></i></a></p>
+            </div>
+        </article>
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="left">
+                <p>How did I make this?</p>
+                <p>Find out <a href="documentation.html" title="Documentation">here
+                    </a></p>
+            </div>
+            <div class="center">
+                <p>Questions? Email me!</p>
+                <a href="mailto:heipler.jj@gmail.com" title="Email">heipler.jj&commat;gmail.com</a>
+            </div>
+            <div class="right">
+                <p>Social Media</p>
+                <!--ICONS FROM FONTAWESOME.COM-->
+                <div class="icons">
+                    <a href="https://www.facebook.com/jjheipz" title="Facebook Link"> <i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="https://www.instagram.com/jjheipz24" title="Instagram Link"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/jjheipler" title="LinkedIn Link">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                    <a href="https://www.github.com/jjheipz24" title="GitHub Link"><i class="fab fa-github-square fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        /* Script for dropdown menu from W3Schools
+         * When user clicks button, content toggles between shown
+         * and hidden */
+        function AboutMenu() {
+            document.getElementById("dropdownMenu").classList.toggle("show");
+        }
+
+        //closes dropdown if click outside it
+        window.onclick = function(e) {
+            if (!e.target.matches('.about')) {
+                var myDropdown = document.getElementById("dropdownMenu");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+        /* Script for hamburger menu used from Glenn Smith on Codepen.io
+         * https://codepen.io/g13nn/pen/eHGEF
+         * Hamburger-style menu for navigation
+         */
+        $(document).ready(function() {
+
+            $("#menu-mobile").hide();
+            $(".hamburger").click(function() {
+                $("#menu-mobile").slideToggle("slow", function() {
+
+                });
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>
