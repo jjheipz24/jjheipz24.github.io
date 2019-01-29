@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Jin Jin Heipler - Resume</title>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <section id="navbar">
+
+        <a href="index.html"><img class="logo" src="media/logo-small.png" alt="velociraptor with Jin Jin Heipler written on top"></a>
+        <div class="page-nav">
+
+            <!--Dropdown section of nav bar-->
+            <div class="dropdown">
+                <div class="about" onclick="AboutMenu()">About</div>
+                <div class="about-content" id="dropdownMenu">
+                    <a href="who-am-i.html" title="Me" id="me">Who Am I?</a>
+                    <a href="contact.html" title="Contact" id="contact">Contact</a>
+                </div>
+            </div>
+            <a href="resume.html" title="Resume" class="resume">Resume</a>
+            <!--Learned bookmark links from W3Schools https://www.w3schools.com/html/html_links.asp-->
+            <a href="index.html#project-heading" title="Home" class="projects">Projects</a>
+        </div>
+    </section>
+    <div id="nav-mobile">
+        <!--Hamburger Icon from FontAwesome-->
+        <div class="hamburger"><i class="fas fa-bars fa-3x"></i></div>
+        <div id="menu-mobile">
+
+            <a href="index.html#project-heading">
+                Projects
+            </a>
+            <a href="resume.html">
+                Resume
+            </a>
+            <a href="who-am-i.html">
+                Who Am I?
+            </a>
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+    </div>
+
+
+    <a id="pdf" href="media/resume2018.pdf" title="Resume PDF" download="JinJin_Resume">Click here to download a PDF version of my resume</a>
+    <main class="resume-main">
+        <div class="resume-name">
+            <h1 id="jj">Jin Jin Heipler</h1>
+            <h3 id="tagline">Developer | Designer</h3>
+            <p id="profile">My goal is to get a cooperative education position in an environment where my programming and/or design skills can flourish to create innovative and captivating experiences. Available summer of 2019.</p>
+        </div>
+
+        <section class="contact-strip">
+            <p class="contact-piece">Shrewsbury, MA</p>
+            <p class="contact-piece">heipler.jj@gmail.com</p>
+            <p class="contact-piece">774-287-3077</p>
+            <p class="contact-piece">linkedin.com/in/jjheipler</p>
+        </section>
+
+        <h4 class="resume-titles">Education</h4>
+        <section class="education">
+            <p id="school">Rochester Institute of Technology</p>
+            <p id="major">New Media Interactive Development (BS)</p>
+            <p><b>GPA:</b> 3.97</p>
+            <p><b>Awards:</b> Dean's List (First Year)</p>
+        </section>
+
+        <h4 class="resume-titles">Work Experience</h4>
+        <section class="work-exp">
+            <h5 class="title-names">Electronics Sales Associate</h5>
+            <h6 class="title-info">Wal-Mart | Northborough, MA | June 2017 - Aug. 2017</h6>
+            <ul>
+                <li>Provided excellent customer service by engaging with customers, answering questions, and encouraging sales</li>
+                <li>Assisted with basic technical support</li>
+            </ul>
+            <h5 class="title-names">Student Notetaker</h5>
+            <h6 class="title-info">RIT Disability Services | Rochester, NY | Oct. 2017 - Dec. 2017</h6>
+            <ul>
+                <li>Created high-quality discrete mathematics notes for students with disabilities</li>
+            </ul>
+            <h5 class="title-names">Brand Associate</h5>
+            <h6 class="title-info">Old Navy | Marlborough, MA | June 2018 - Present</h6>
+            <ul>
+                <li>Answered questions, processed sales transactions, and informed customers about the latest sales, products, and styles</li>
+                <li>Maintained a clean working environment and kept all merchandise organized and priced correctly</li>
+            </ul>
+            <h5 class="title-names">IGM Ambassador Tour Guide</h5>
+            <h6 class="title-info">RIT Interactive School of Games and Media | Rochester, NY | Sept. 2018 - Present</h6>
+            <ul>
+                <li>Met with, answered questions, and provided tours of the IGM facilities to prospective students and families</li>
+                <li>Completed tasks for the IGM staff when not giving tours</li>
+            </ul>
+        </section>
+
+        <h4 class="resume-titles">Projects</h4>
+        <section class="prjcts">
+            <h5 class="title-names">Mini Savage: Golf Edition</h5>
+            <h6 class="title-info">Champlain College Game Academy | Champlain, VT | June 2016</h6>
+            <ul>
+                <li>Fully-functional, golf-themed game created by myself and three others over the course of two weeks</li>
+                <li>Produced using C#, Unity, and Maya</li>
+            </ul>
+        </section>
+
+        <h4 class="resume-titles">Skills</h4>
+        <section class="skills">
+            <div id="programming">
+                <h5 id="programming-title">Programming</h5>
+                <ul>
+                    <li>Javascript</li>
+                    <li>C#</li>
+                    <li>Java</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </div>
+            <div id="software">
+                <h5 id="software-title">Software</h5>
+                <ul>
+                    <li>Adobe Illustrator</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe InDesign</li>
+                    <li>Adobe Brackets</li>
+                    <li>Maya</li>
+                    <li>Unity</li>
+                    <li>Blender</li>
+                    <li>Microsoft Visual Studio</li>
+                    <li>Microsoft Office</li>
+                </ul>
+            </div>
+        </section>
+        <h4 class="resume-titles">Extracurriculars</h4>
+        <section class="xtra">
+            <h5 class="title-names">IGM Student Ambassador</h5>
+            <h6 class="title-info">Sept. 2018 - Present</h6>
+            <h5 class="title-names">RIT GLBTQIA+ Alliance</h5>
+            <h6 class="title-info">Secretary | Jan.2017 - Present</h6>
+            <h5 class="title-names">RIT Women's Rugby Club</h5>
+            <h6 class="title-info">Sept. 2017 - Present</h6>
+        </section>
+
+
+    </main>
+    <!--Footer-->
+    <footer>
+
+        <div class="footer-container">
+            <div class="left">
+                <p>How did I make this?</p>
+                <p>Find out <a href="documentation.html" title="Documentation">here
+                    </a></p>
+            </div>
+            <div class="center">
+                <p>Questions? Email me!</p>
+                <a href="mailto:heipler.jj@gmail.com" title="Email">heipler.jj&commat;gmail.com</a>
+            </div>
+            <div class="right">
+                <p>Social Media</p>
+                <!--ICONS FROM FONTAWESOME.COM-->
+                <div class="icons">
+                    <a href="https://www.facebook.com/jjheipz" title="Facebook Link"> <i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="https://www.instagram.com/jjheipz24" title="Instagram Link"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/jjheipler" title="LinkedIn Link">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                    <a href="https://www.github.com/jjheipz24" title="GitHub Link"><i class="fab fa-github-square fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        /* Script for dropdown menu from W3Schools
+         * When user clicks button, content toggles between shown
+         * and hidden */
+        function AboutMenu() {
+            document.getElementById("dropdownMenu").classList.toggle("show");
+        }
+
+        //closes dropdown if click outside it
+        window.onclick = function(e) {
+            if (!e.target.matches('.about')) {
+                var myDropdown = document.getElementById("dropdownMenu");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+        /* Script for hamburger menu used from Glenn Smith on Codepen.io
+         * https://codepen.io/g13nn/pen/eHGEF
+         * Hamburger-style menu for navigation
+         */
+        $(document).ready(function() {
+
+            $("#menu-mobile").hide();
+            $(".hamburger").click(function() {
+                $("#menu-mobile").slideToggle("slow", function() {
+
+                });
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>
