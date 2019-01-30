@@ -645,7 +645,8 @@ li {
         padding-right: 1vw;
     }
 
-    #programming {
+    #programming,
+    #libraries {
         padding-right: 5vw;
     }
 
