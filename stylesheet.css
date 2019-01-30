@@ -595,6 +595,12 @@ li {
     margin-left: -25px;
 }
 
+#bs,
+#ind {
+    font-weight: 400;
+    font-size: 11pt;
+}
+
 .xtra {
     margin-bottom: 200px;
 }
