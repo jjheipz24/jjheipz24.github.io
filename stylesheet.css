@@ -377,6 +377,7 @@ INDIVIDUAL PROJECTS
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 2vw;
 }
 
 .task-text {
