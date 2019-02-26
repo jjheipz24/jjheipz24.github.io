@@ -602,6 +602,11 @@ li {
     font-size: 11pt;
 }
 
+#best {
+    font-weight: 500;
+    font-size: 11pt;
+}
+
 .xtra {
     margin-bottom: 200px;
 }
