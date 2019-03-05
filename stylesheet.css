@@ -596,6 +596,11 @@ li {
     margin-left: -25px;
 }
 
+#dates {
+    font-weight: 400;
+    font-size: 10pt;
+}
+
 #bs,
 #ind {
     font-weight: 400;
