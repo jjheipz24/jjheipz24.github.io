@@ -3,7 +3,7 @@ let app = new Vue({
     el: '#root',
     data:{
         //variables
-        test: "this is a test message"
+        test: "this is a test message",
     },
     methods:{
 
