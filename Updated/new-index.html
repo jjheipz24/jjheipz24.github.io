@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,500,600,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- Load required Bootstrap and BootstrapVue CSS -->
     <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
     <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
     <!-- Load polyfills to support older browsers -->
-    <script src="//polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver" crossorigin="anonymous"></script>
+    <script src="//polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver" crossorigin="anonymous">
+    </script>
     <!-- Load Vue followed by BootstrapVue -->
     <script src="//unpkg.com/vue@latest/dist/vue.min.js"></script>
     <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
@@ -20,12 +23,15 @@
 </head>
 
 <body>
-<div id="root">
-    <p v-bind="test">{{test}}</p>
-</div>
-
-<!--main script-->
-<script src="scripts/main.js"></script>
+    <b-jumbotron id="root" fluid>
+        <b-container responsive>
+            <h1 id="title">Jin Jin Heipler</h1>
+            <br>
+            <h2 id="traits">Developer | Designer</h2>
+        </b-container>
+    </b-jumbotron>
+    <!--main script-->
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
