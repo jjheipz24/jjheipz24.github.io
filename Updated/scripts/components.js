@@ -10,15 +10,10 @@ Vue.component('about-card', {
                 </b-card>
                 <b-card class="back card">
                     <section class="card-body">
-                        <p class="card-text">{{content}}</p>
+                        <div id="about-content">
+                            <p class="card-text">{{content}}</p>
+                        </div>
                     </section>
                 </b-card>
             </div>`
 });
-
-//Vue.component('test', {
-//    props: ['title'],
-//    template: `<div>
-//<h1>{{title}}</h1>
-//</div>`
-//})

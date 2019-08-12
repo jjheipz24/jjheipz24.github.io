@@ -35,25 +35,86 @@
         </div>
     </div>
     <b-container id="root">
+
+        <!--ABOUT CARDS-->
         <div class="row about">
             <!--allows for multiple flip cards-->
-            <section class="card-container col-md-*">
-
-                <about-card :title="title" :icon="icon" :content="content"></about-card>
-                <!--<div class="card-flip">
+            <div class="card-container col-md-4">
+                <div class="card-flip text-center">
                     <b-card class="front card">
                         <div class="card-body">
                             <h2 class="card-title">Goals</h2>
-                            <p class="card-text">Content</p>
+                            <i class="fas fa-medal fa-7x"></i>
                         </div>
                     </b-card>
                     <b-card class="back card">
                         <div class="card-body">
-                            <p class="card-text">Content</p>
+                            <h2 class="card-title">Goals</h2>
+                            <div id="about-content">
+                                <p class="card-text">As a new media interactive development major at Rochester Institute of Technology, I aspire to combine my creative and technical skills to develop engaging, interactive experiences for the user.</p>
+                            </div>
                         </div>
                     </b-card>
-                </div>-->
-            </section>
+                </div>
+            </div>
+
+            <div class="card-container col-md-4">
+                <div class="card-flip text-center">
+                    <b-card class="front card">
+                        <div class="card-body">
+                            <h2 class="card-title">Skills</h2>
+                            <i class="fas fa-code fa-7x"></i>
+                        </div>
+                    </b-card>
+                    <b-card class="back card">
+                        <div class="card-body">
+                            <h2 class="card-title">Skills</h2>
+                            <div id="about-content">
+                                <h3>Languages</h3>
+                                <ul>
+                                    <li>HTML5 &amp; CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>C#</li>
+                                    <li>Java</li>
+                                </ul>
+                                <h3>Frameworks/Libraries</h3>
+                                <ul>
+                                    <li>jQuery</li>
+                                    <li>Bootstrap</li>
+                                    <li>Vue.js</li>
+                                    <li>Angular.js</li>
+                                    <li>hexi.js</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </b-card>
+                </div>
+            </div>
+
+            <div class="card-container col-md-4">
+                <div class="card-flip text-center">
+                    <b-card class="front card">
+                        <div class="card-body">
+                            <h2 class="card-title">Fun Facts</h2>
+                            <i class="fas fa-user fa-7x"></i>
+                        </div>
+                    </b-card>
+                    <b-card class="back card">
+                        <div class="card-body">
+                            <h2 class="card-title">Fun Facts</h2>
+                            <div id="about-content">
+                                <ul>
+                                    <li>Uses they/them pronouns</li>
+                                    <li>3rd degree black belt in Tae Kwon Do</li>
+                                    <li>Plays rugby</li>
+                                    <li>Has 6 Tattoos</li>
+                                    <li>Cat's name is Cookie Dough</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </b-card>
+                </div>
+            </div>
         </div>
 
     </b-container>
