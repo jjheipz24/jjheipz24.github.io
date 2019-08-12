@@ -1,11 +1,11 @@
 //Template for "About Me" cards
 Vue.component('about-card', {
     props: ['title', 'icon', 'content'],
-    template: `<div class="card-flip">
+    template: `<div class="card-flip text-center">
                 <b-card class="front card">
                     <section class="card-body">
                         <h2 class="card-title">{{title}}</h2>
-                        <i class={{icon}}></i>
+                        <i v-bind:class="icon"></i>
                     </section>
                 </b-card>
                 <b-card class="back card">
