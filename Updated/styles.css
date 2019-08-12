@@ -14,7 +14,7 @@ JUMBOTRON
     height: 90vh;
 }
 
-.container {
+.jumbo-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,9 +40,16 @@ JUMBOTRON
 /***************
 ABOUT ME CARDS
 ***************/
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .card-container {
     display: grid;
     perspective: 700px;
+    /*margin: 0 auto;*/
 }
 
 .card-flip,
@@ -51,7 +58,7 @@ ABOUT ME CARDS
     transition: all 0.7s ease;
 }
 
-.card-flip div {
+.card-flip card {
     backface-visibility: hidden;
     transform-style: preserve-3d;
 }

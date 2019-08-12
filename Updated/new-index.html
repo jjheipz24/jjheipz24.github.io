@@ -26,34 +26,40 @@
 </head>
 
 <body>
-    <b-jumbotron id="root" fluid>
-        <b-container responsive>
+
+    <div class="jumbotron" fluid>
+        <div class="container jumbo-container" responsive>
             <h1 id="title">Jin Jin Heipler</h1>
             <br>
             <h2 id="traits">Developer | Designer</h2>
-        </b-container>
-    </b-jumbotron>
-
-    <div class="row">
-        <!--allows for multiple flip cards-->
-        <div class="card-container col-md-*">
-            <div class="card-flip">
-                <div class="front card">
-                    <b-card title="Hello">
-                        <b-card-text>Front of the card</b-card-text>
-                    </b-card>
-                </div>
-                <div class="back card">
-                    <b-card title="Goodbye">
-                        <b-card-text>Back of the card</b-card-text>
-                    </b-card>
-                </div>
-            </div>
         </div>
     </div>
+    <b-container id="root">
+        <div class="row about">
+            <!--allows for multiple flip cards-->
+            <section class="card-container col-md-*">
 
+                <!--<about-card v-bind:title="Test" v-bind:content="Test conent"></about-card>-->
+                <div class="card-flip">
+                    <b-card class="front card">
+                        <div class="card-body">
+                            <h2 class="card-title">Goals</h2>
+                            <p class="card-text">Content</p>
+                        </div>
+                    </b-card>
+                    <b-card class="back card">
+                        <div class="card-body">
+                            <p class="card-text">Content</p>
+                        </div>
+                    </b-card>
+                </div>
+            </section>
+        </div>
+    </b-container>
     <!--main script-->
+    <script src="scripts/components.js"></script>
     <script src="scripts/main.js"></script>
+
 </body>
 
 </html>
