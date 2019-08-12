@@ -39,8 +39,8 @@
             <!--allows for multiple flip cards-->
             <section class="card-container col-md-*">
 
-                <!--<about-card v-bind:title="Test" v-bind:content="Test conent"></about-card>-->
-                <div class="card-flip">
+                <about-card :title="title" :icon="icon" :content="content"></about-card>
+                <!--<div class="card-flip">
                     <b-card class="front card">
                         <div class="card-body">
                             <h2 class="card-title">Goals</h2>
@@ -52,9 +52,10 @@
                             <p class="card-text">Content</p>
                         </div>
                     </b-card>
-                </div>
+                </div>-->
             </section>
         </div>
+
     </b-container>
     <!--main script-->
     <script src="scripts/components.js"></script>

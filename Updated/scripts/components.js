@@ -1,17 +1,24 @@
 //Template for "About Me" cards
 Vue.component('about-card', {
-    props: [],
+    props: ['title', 'icon', 'content'],
     template: `<div class="card-flip">
                 <b-card class="front card">
                     <section class="card-body">
-                        <h2 class="card-title">Test</h2>
-                        <i class="fas fa-medal"></i>
+                        <h2 class="card-title">{{title}}</h2>
+                        <i class={{icon}}></i>
                     </section>
                 </b-card>
                 <b-card class="back card">
                     <section class="card-body">
-                        <p class="card-text">Test content</p>
+                        <p class="card-text">{{content}}</p>
                     </section>
                 </b-card>
             </div>`
 });
+
+//Vue.component('test', {
+//    props: ['title'],
+//    template: `<div>
+//<h1>{{title}}</h1>
+//</div>`
+//})

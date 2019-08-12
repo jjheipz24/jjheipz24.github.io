@@ -44,6 +44,7 @@ ABOUT ME CARDS
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    min-height: 100%;
 }
 
 .card-container {
@@ -69,6 +70,7 @@ ABOUT ME CARDS
     grid-template-areas: "frontAndBack";
     transform-style: preserve-3d;
     transition: all 0.7s ease;
+    margin-bottom: 50px;
 }
 
 .front {
@@ -82,4 +84,5 @@ ABOUT ME CARDS
 
 .card-container:hover .card-flip {
     transform: rotateY(180deg);
+    cursor: pointer;
 }
