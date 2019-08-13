@@ -34,88 +34,93 @@
             <h2 id="traits">Developer | Designer</h2>
         </div>
     </div>
-    <b-container id="root">
+
+    <b-container id="root" fluid>
 
         <!--ABOUT CARDS-->
-        <div class="row about">
+        <b-row class="about">
             <!--allows for multiple flip cards-->
-            <div class="card-container col-md-4">
+            <div class="card-container col-sm-3">
                 <div class="card-flip text-center">
                     <b-card class="front card">
-                        <div class="card-body">
-                            <h2 class="card-title">Goals</h2>
+                        <b-card-body>
+                            <h2 class="card-title">Goal</h2>
                             <i class="fas fa-medal fa-7x"></i>
-                        </div>
+                        </b-card-body>
                     </b-card>
                     <b-card class="back card">
-                        <div class="card-body">
-                            <h2 class="card-title">Goals</h2>
+                        <b-card-body class="info">
+                            <i class="fas fa-medal fa-2x body-icon"></i>
                             <div id="about-content">
-                                <p class="card-text">As a new media interactive development major at Rochester Institute of Technology, I aspire to combine my creative and technical skills to develop engaging, interactive experiences for the user.</p>
+                                <b-card-text class="about-text">As a new media interactive development major at Rochester Institute of Technology, I aspire to combine my creative and technical skills to develop engaging, interactive experiences for the user.</b-card-text>
                             </div>
-                        </div>
+                        </b-card-body>
                     </b-card>
                 </div>
             </div>
 
-            <div class="card-container col-md-4">
+            <div class="card-container col-sm-3">
                 <div class="card-flip text-center">
                     <b-card class="front card">
-                        <div class="card-body">
+                        <b-card-body>
                             <h2 class="card-title">Skills</h2>
                             <i class="fas fa-code fa-7x"></i>
-                        </div>
+                        </b-card-body>
                     </b-card>
                     <b-card class="back card">
-                        <div class="card-body">
-                            <h2 class="card-title">Skills</h2>
-                            <div id="about-content">
-                                <h3>Languages</h3>
-                                <ul>
-                                    <li>HTML5 &amp; CSS</li>
-                                    <li>JavaScript</li>
-                                    <li>C#</li>
-                                    <li>Java</li>
-                                </ul>
-                                <h3>Frameworks/Libraries</h3>
-                                <ul>
-                                    <li>jQuery</li>
-                                    <li>Bootstrap</li>
-                                    <li>Vue.js</li>
-                                    <li>Angular.js</li>
-                                    <li>hexi.js</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <b-card-body class="info">
+                            <i class="fas fa-code fa-2x body-icon"></i>
+                            <b-card-text class="about-text">
+                                <h4>Languages: </h4>
+                                <span>HTML5 &amp; CSS, JavaScript, C#, Java</span>
+                                <br /> <br />
+                                <h4>Frameworks/Libraries:</h4>
+                                <span>jQuery, Bootstrap, Vue.js, Angular.js, hexi.js, p5.js</span>
+                            </b-card-text>
+                        </b-card-body>
                     </b-card>
                 </div>
             </div>
 
-            <div class="card-container col-md-4">
+            <div class="card-container col-sm-3">
                 <div class="card-flip text-center">
                     <b-card class="front card">
-                        <div class="card-body">
+                        <b-card-body>
                             <h2 class="card-title">Fun Facts</h2>
                             <i class="fas fa-user fa-7x"></i>
-                        </div>
+                        </b-card-body>
                     </b-card>
                     <b-card class="back card">
-                        <div class="card-body">
-                            <h2 class="card-title">Fun Facts</h2>
-                            <div id="about-content">
+                        <b-card-body class="info">
+                            <i class="fas fa-user fa-2x body-icon" id="fun-fact"></i>
+                            <b-card-text class="about-text">
                                 <ul>
                                     <li>Uses they/them pronouns</li>
-                                    <li>3rd degree black belt in Tae Kwon Do</li>
+                                    <li>Adopted from China
                                     <li>Plays rugby</li>
                                     <li>Has 6 Tattoos</li>
                                     <li>Cat's name is Cookie Dough</li>
                                 </ul>
-                            </div>
-                        </div>
+                            </b-card-text>
+                        </b-card-body>
                     </b-card>
                 </div>
             </div>
-        </div>
+        </b-row>
+
+        <!--PROJECTS-->
+        <b-row class="projects">
+
+            <b-card v-b-modal.modal-center class="test">
+                <h1 class="card-title">Test Card</h1>
+                <b-card-body>
+                    <p class="card-text">This is a test card</p>
+                </b-card-body>
+            </b-card>
+            <b-modal id="modal-center" centered title="BootstrapVue">
+                <p class="my-4">Vertically centered modal!</p>
+            </b-modal>
+        </b-row>
 
     </b-container>
     <!--main script-->
