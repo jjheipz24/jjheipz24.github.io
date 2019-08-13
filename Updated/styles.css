@@ -155,8 +155,10 @@ PROJECTS
 .test {
     margin: 50px;
     width: 400px;
+    transition: all .2s ease-in-out;
 }
 
 .test:hover {
+    transform: scale(1.1);
     cursor: pointer;
 }
