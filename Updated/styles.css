@@ -58,7 +58,7 @@ ABOUT ME CARDS
 .card-flip,
 .card-container {
     transform-style: preserve-3d;
-    transition: all 0.7s ease;
+    transition: all .9s ease;
 }
 
 .card-flip card {
@@ -71,7 +71,7 @@ ABOUT ME CARDS
     grid-template: 1fr / 1fr;
     grid-template-areas: "frontAndBack";
     transform-style: preserve-3d;
-    transition: all 0.7s ease;
+    transition: all .9s ease;
     margin: 50px 0;
 }
 
@@ -93,7 +93,7 @@ ABOUT ME CARDS
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #084766;
+    background-color: #00223D;
     font-family: 'Asap', sans-serif;
     color: white;
 
@@ -101,7 +101,7 @@ ABOUT ME CARDS
 
 .about .info {
     background-color: white;
-    color: #084766;
+    color: #00223D;
 }
 
 .about .card-body h2 {
@@ -147,7 +147,7 @@ PROJECTS
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    background-color: #4BC5D5;
+    background-color: #084766;
     height: 100%;
 
 }
