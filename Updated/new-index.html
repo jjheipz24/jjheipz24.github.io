@@ -110,7 +110,7 @@
 
         <!--PROJECTS-->
         <b-row class="projects">
-            <div class="project-card">
+            <!--<div class="project-card">
                 <b-card v-b-toggle.collapse-1 class="test">
                     <h1 class="card-title">Test Card</h1>
                     <b-card-body>
@@ -122,7 +122,10 @@
                         <b-card-text>Textbox in a collapse</b-card-text>
                     </b-card>
                 </b-collapse>
-            </div>
+            </div>-->
+            <project-card :img="img" :title="title" :descrip="descrip" :link="link" :tech="tech"></project-card>
+
+
         </b-row>
 
     </b-container>
