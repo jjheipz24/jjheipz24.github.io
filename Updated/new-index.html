@@ -110,16 +110,19 @@
 
         <!--PROJECTS-->
         <b-row class="projects">
-
-            <b-card v-b-modal.modal-center class="test">
-                <h1 class="card-title">Test Card</h1>
-                <b-card-body>
-                    <p class="card-text">This is a test card</p>
-                </b-card-body>
-            </b-card>
-            <b-modal id="modal-center" centered title="BootstrapVue">
-                <p class="my-4">Vertically centered modal!</p>
-            </b-modal>
+            <div class="project-card">
+                <b-card v-b-toggle.collapse-1 class="test">
+                    <h1 class="card-title">Test Card</h1>
+                    <b-card-body>
+                        <p class="card-text">This is a test card</p>
+                    </b-card-body>
+                </b-card>
+                <b-collapse id="collapse-1" class="mt-2">
+                    <b-card>
+                        <b-card-text>Textbox in a collapse</b-card-text>
+                    </b-card>
+                </b-collapse>
+            </div>
         </b-row>
 
     </b-container>

@@ -152,13 +152,18 @@ PROJECTS
 
 }
 
+.project-card {
+    margin: 100px;
+}
+
 .test {
-    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 0px;
     width: 400px;
     transition: all .2s ease-in-out;
 }
 
 .test:hover {
-    transform: scale(1.1);
+    /*transform: scale(1.1);*/
     cursor: pointer;
 }
