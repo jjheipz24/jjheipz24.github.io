@@ -110,24 +110,10 @@
 
         <!--PROJECTS-->
         <b-row class="projects">
-            <!--<div class="project-card">
-                <b-card v-b-toggle.collapse-1 class="test">
-                    <h1 class="card-title">Test Card</h1>
-                    <b-card-body>
-                        <p class="card-text">This is a test card</p>
-                    </b-card-body>
-                </b-card>
-                <b-collapse id="collapse-1" class="mt-2">
-                    <b-card>
-                        <b-card-text>Textbox in a collapse</b-card-text>
-                    </b-card>
-                </b-collapse>
-            </div>-->
-            <project-card :img="img" :title="title" :descrip="descrip" :link="link" :tech="tech"></project-card>
 
+            <project-card :img="screenshot" :title="title" :descrip="descrip" :tech="tech" :link="link"></project-card>
 
         </b-row>
-
     </b-container>
     <!--main script-->
     <script src="scripts/components.js"></script>

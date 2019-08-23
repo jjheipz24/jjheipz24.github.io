@@ -2,7 +2,7 @@
 let app = new Vue({
     el: '#root',
     data: {
-        img: "'../projects/projectpics/dna/hamburger.png'",
+        screenshot: '../projects/projectpics/dna/hamburger.png',
         title: "Test Title",
         descrip: "Just a test description to fill space",
         link: "blah",

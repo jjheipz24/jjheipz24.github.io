@@ -18,18 +18,24 @@ Vue.component('about-card', {
             </div>`
 });
 
+
 Vue.component('project-card', {
-    props: ['img', 'title', 'descrip', 'link', 'tech'],
+    props: ['img', 'title', 'descrip', 'tech', 'link'],
     template: `<div class="project-card">
-                <b-card v-b-toggle.test img-src={{img}} img-top>
-                    <h3 class="card-title" text-center>{{title}}</h2>
-                </b-card>
+                <div class="proj-cover" v-b-toggle.test>
+                    <div class="hovereffect">
+                        <img class="card-img img-responsive" :src="img">
+                        <div class="overlay">
+                            <h2>{{title}}</h2>
+                        </div>
+                    </div>
+                </div>
                 <b-collapse id="test" class="mt-2">
                     <b-card>
                         <b-card-text>
                             <p>{{descrip}}</p>
                             <span>Created with: {{tech}}</span>
-                            <br/><br/>
+                            <br /><br />
                             <span>Check it out: {{link}}</span>
                         </b-card-text>
                     </b-card>
