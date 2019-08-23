@@ -110,9 +110,11 @@
 
         <!--PROJECTS-->
         <b-row class="projects">
+            <div v-for="obj in projects">
 
-            <project-card :img="screenshot" :title="title" :descrip="descrip" :tech="tech" :link="link" :tag="tag"></project-card>
+                <project-card :img="obj.screenshot" :title="obj.title" :descrip="obj.descrip" :tech="obj.tech" :link="obj.link" :tag="obj.tag"></project-card>
 
+            </div>
 
         </b-row>
     </b-container>

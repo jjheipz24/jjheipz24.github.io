@@ -18,7 +18,7 @@ Vue.component('about-card', {
             </div>`
 });
 
-
+//Template for project cards
 Vue.component('project-card', {
     props: ['img', 'title', 'descrip', 'tech', 'link', 'tag'],
     template: `<div class="project-card">
