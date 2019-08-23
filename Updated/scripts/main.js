@@ -6,7 +6,8 @@ let app = new Vue({
         title: "Test Title",
         descrip: "Just a test description to fill space",
         link: "blah",
-        tech: "insert tech here"
+        tech: "insert tech here",
+        tag: "test"
     },
     methods: {
 

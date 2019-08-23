@@ -20,9 +20,9 @@ Vue.component('about-card', {
 
 
 Vue.component('project-card', {
-    props: ['img', 'title', 'descrip', 'tech', 'link'],
+    props: ['img', 'title', 'descrip', 'tech', 'link', 'tag'],
     template: `<div class="project-card">
-                <div class="proj-cover" v-b-toggle.test>
+                <div class="proj-cover col-lg-6" v-b-toggle="'{{tag}}'">
                     <div class="hovereffect">
                         <img class="card-img img-responsive" :src="img">
                         <div class="overlay">
@@ -30,7 +30,7 @@ Vue.component('project-card', {
                         </div>
                     </div>
                 </div>
-                <b-collapse id="test" class="mt-2">
+                <b-collapse id={{tag}} class="mt-2">
                     <b-card>
                         <b-card-text>
                             <p>{{descrip}}</p>
