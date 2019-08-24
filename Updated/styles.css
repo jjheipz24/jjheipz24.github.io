@@ -158,6 +158,12 @@ PROJECTS
 
 }
 
+/*container for cards within project section*/
+.all-project-cards {
+    display: flex;
+    flex-direction: row;
+}
+
 .project-card {
     display: flex;
     flex-direction: column;

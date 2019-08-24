@@ -4,7 +4,7 @@ let app = new Vue({
     data: {
         projects: [
             {
-                screenshot: '../projects/projectpics/dna/hamburger.png',
+                img: '../projects/projectpics/dna/hamburger.png',
                 title: "Test Title",
                 descrip: "Just a test description to fill space",
                 link: "blah",
@@ -13,7 +13,7 @@ let app = new Vue({
             },
 
             {
-                screenshot: '../projects/projectpics/coin-counter/coincountercalc.png',
+                img: '../projects/projectpics/coin-counter/coincountercalc.png',
                 title: "Coin Counter",
                 descrip: "Another card to test",
                 link: "blah",
@@ -22,7 +22,6 @@ let app = new Vue({
             }
 
         ]
-
     },
     methods: {
 

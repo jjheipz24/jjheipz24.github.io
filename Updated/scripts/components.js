@@ -17,28 +17,3 @@ Vue.component('about-card', {
                 </b-card>
             </div>`
 });
-
-//Template for project cards
-Vue.component('project-card', {
-    props: ['img', 'title', 'descrip', 'tech', 'link', 'tag'],
-    template: `<div class="project-card">
-                <div class="proj-cover col-lg-6" v-b-toggle="'{{tag}}'">
-                    <div class="hovereffect">
-                        <img class="card-img img-responsive" :src="img">
-                        <div class="overlay">
-                            <h2>{{title}}</h2>
-                        </div>
-                    </div>
-                </div>
-                <b-collapse id={{tag}} class="mt-2">
-                    <b-card>
-                        <b-card-text>
-                            <p>{{descrip}}</p>
-                            <span>Created with: {{tech}}</span>
-                            <br /><br />
-                            <span>Check it out: {{link}}</span>
-                        </b-card-text>
-                    </b-card>
-                </b-collapse>
-            </div>`
-});

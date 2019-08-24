@@ -110,10 +110,29 @@
 
         <!--PROJECTS-->
         <b-row class="projects">
-            <div v-for="obj in projects">
-
-                <project-card :img="obj.screenshot" :title="obj.title" :descrip="obj.descrip" :tech="obj.tech" :link="obj.link" :tag="obj.tag"></project-card>
-
+            <div role="tablist" class="all-project-cards">
+                <div v-for="obj in projects">
+                    <div class="project-card">
+                        <div class="proj-cover col-lg-6" v-b-toggle="'accordion-' + obj.tag">
+                            <div class="hovereffect">
+                                <img class="card-img img-responsive" :src="obj.img">
+                                <div class=" overlay">
+                                    <h2>{{obj.title}}</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <b-collapse :id="'accordion-' + obj.tag" accordion="my-accordion" role="tabpanel" class="mt-2">
+                            <b-card>
+                                <b-card-text>
+                                    <p>{{obj.descrip}}</p>
+                                    <span>Created with: {{obj.tech}}</span>
+                                    <br /><br />
+                                    <span>Check it out: {{obj.link}}</span>
+                                </b-card-text>
+                            </b-card>
+                        </b-collapse>
+                    </div>
+                </div>
             </div>
 
         </b-row>
