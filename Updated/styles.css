@@ -182,12 +182,6 @@ PROJECTS
     cursor: pointer;
 }
 
-#test {
-    margin-top: 50px;
-    margin-bottom: 0px;
-    transition: all .4s ease-in-out;
-}
-
 /** Handles hover effect **/
 
 .hovereffect {
