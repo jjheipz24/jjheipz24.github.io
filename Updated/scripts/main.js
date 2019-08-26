@@ -21,6 +21,15 @@ let app = new Vue({
                 tag: "coincounter"
             },
 
+            {
+                img: 'imgs/ocean.png',
+                title: "Sea What You Did",
+                descrip: "An interactive graphic made by myself and a partner that helps children learn about ocean pollution in a fun, easy way. It addresses the effects of trash, oil, and chemical spills on the plant and animal life of the ocean and on us as humans.",
+                link: "https://jjheipz24.github.io/ocean-project/index.html",
+                tech: "HTML, CSS, Javascript, hexi.js, Particle.js, Adobe Illustrator",
+                tag: "ocean"
+            },
+
         ]
     },
     methods: {
