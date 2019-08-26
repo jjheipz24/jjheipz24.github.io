@@ -13,13 +13,13 @@ let app = new Vue({
             },
 
             {
-                img: '../projects/projectpics/coin-counter/coincountercalc.png',
+                img: 'imgs/CoinCounter.png',
                 title: "Coin Counter",
                 descrip: "Another card to test",
                 link: "blah",
                 tech: "insert tech here",
                 tag: "other"
-            }
+            },
 
         ]
     },

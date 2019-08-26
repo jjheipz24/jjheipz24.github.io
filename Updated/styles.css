@@ -171,14 +171,13 @@ PROJECTS
     margin: 50px 0;
 }
 
-.proj-cover {
-    /*width: 400px;*/
-
-}
-
 .proj-cover:hover {
     /*transform: scale(1.1);*/
     cursor: pointer;
+}
+
+.img-container {
+    width: 80%;
 }
 
 /** Handles hover effect **/

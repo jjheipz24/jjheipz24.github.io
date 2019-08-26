@@ -111,13 +111,15 @@
         <!--PROJECTS-->
         <b-row class="projects">
             <div role="tablist" class="all-project-cards">
-                <div v-for="obj in projects">
+                <div v-for="obj in projects" class="col-lg-6">
                     <div class="project-card">
-                        <div class="proj-cover col-lg-6" v-b-toggle="'accordion-' + obj.tag">
+                        <div class="proj-cover" v-b-toggle="'accordion-' + obj.tag">
                             <div class="hovereffect">
-                                <img class="card-img img-responsive" :src="obj.img">
-                                <div class="overlay">
-                                    <h2>{{obj.title}}</h2>
+                                <div class="img-container">
+                                    <b-img class="card-img" fluid :src="obj.img"></b-img>
+                                    <div class="overlay">
+                                        <h2>{{obj.title}}</h2>
+                                    </div>
                                 </div>
                             </div>
                         </div>
