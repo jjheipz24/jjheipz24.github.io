@@ -61,11 +61,24 @@ ABOUT ME CARDS
 .card-container {
     transform-style: preserve-3d;
     transition: all .9s ease;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-style: transition: all .9s ease;
+    -moz-transform-style: preserve-3d;
+    -moz-transform-style: transition: all .9s ease;
+    -o-transform-style: preserve-3d;
+    -o-transform-style: transition: all .9s ease;
 }
 
 .card-flip card {
     backface-visibility: hidden;
     transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -o-transform-style: preserve-3d;
+
 }
 
 .card-flip {
@@ -74,6 +87,12 @@ ABOUT ME CARDS
     grid-template-areas: "frontAndBack";
     transform-style: preserve-3d;
     transition: all .9s ease;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-style: transition: all .9s ease;
+    -moz-transform-style: preserve-3d;
+    -moz-transform-style: transition: all .9s ease;
+    -o-transform-style: preserve-3d;
+    -o-transform-style: transition: all .9s ease;
     margin: 50px 0;
 }
 
@@ -85,6 +104,9 @@ ABOUT ME CARDS
 .back {
     grid-area: frontAndBack;
     transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
 }
 
 /*enhances 3d effect by creating depth*/
@@ -139,6 +161,9 @@ ABOUT ME CARDS
 /*controls flip animation on hover*/
 .card-container:hover .card-flip {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
     cursor: pointer;
 }
 

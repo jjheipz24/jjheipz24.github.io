@@ -13,6 +13,15 @@ let app = new Vue({
                 tag: "coincounter"
             },
 
+            {
+                img: 'imgs/dna.png',
+                title: "DNA Portal",
+                descrip: "For my internship at MassMutual, I worked on the UI for their Finance Data and Analytics Portal. This portal allows for a more efficient way for use-case owners and businesses to access and report finance data.",
+                link: "#",
+                tech: "HTML, CSS, Angular.js",
+                tag: "dna"
+            },
+
         ]
     },
     methods: {
