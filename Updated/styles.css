@@ -8,7 +8,7 @@ html {
 JUMBOTRON
 ***********/
 .jumbotron {
-    background-image: url(../media/universe-jumbotron.jpg);
+    background-image: url(imgs/universe-jumbotron.jpg);
     background-size: cover;
     width: 100%;
     height: 90vh;
