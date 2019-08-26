@@ -3,22 +3,14 @@ let app = new Vue({
     el: '#root',
     data: {
         projects: [
-            {
-                img: '../projects/projectpics/dna/hamburger.png',
-                title: "Test Title",
-                descrip: "Just a test description to fill space",
-                link: "blah",
-                tech: "insert tech here",
-                tag: "test"
-            },
 
             {
                 img: 'imgs/CoinCounter.png',
                 title: "Coin Counter",
-                descrip: "Another card to test",
-                link: "blah",
-                tech: "insert tech here",
-                tag: "other"
+                descrip: "A money visualizer web app created by myself and two others at RIT's BrickHackV. This app is geared towards students with special needs to assist with visualizing money and giving change. Fun fact: It won 'Best Multimedia Hack!'",
+                link: "https://jjheipz24.github.io/CoinCounter",
+                tech: "HTML, CSS, Javascript, Bootstrap, animate.js, Three.js, jQuery, Adobe Illustrator, Adobe Photoshop",
+                tag: "coincounter"
             },
 
         ]

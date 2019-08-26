@@ -168,7 +168,11 @@ PROJECTS
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 30px;
+    background-color: #00223D;
     margin: 50px 0;
+    box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.3), 0 18px 32px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .proj-cover:hover {
@@ -177,7 +181,7 @@ PROJECTS
 }
 
 .img-container {
-    width: 80%;
+    width: 100%;
 }
 
 /** Handles hover effect **/
