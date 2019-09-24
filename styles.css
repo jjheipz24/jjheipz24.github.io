@@ -4,6 +4,15 @@ html {
     height: 100%;
 }
 
+/***************
+ALERT
+***************/
+
+.alert-notif {
+    font-family: 'Asap', sans-serif;
+
+}
+
 /***********
 JUMBOTRON
 ***********/
@@ -179,6 +188,7 @@ PROJECTS
     text-align: center;
     background-color: #084766;
     padding: 90px 0;
+
 }
 
 /*container for cards within project section*/
@@ -285,4 +295,15 @@ PROJECTS
     -ms-transform: translatey(0);
     -webkit-transform: translatey(0);
     transform: translatey(0);
+}
+
+/**********
+FOOTER
+**********/
+.footer-container {
+    background-color: #00223D;
+}
+
+footer {
+    color: white;
 }
