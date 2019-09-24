@@ -179,13 +179,12 @@ PROJECTS
     text-align: center;
     background-color: #084766;
     padding: 90px 0;
-
 }
 
 /*container for cards within project section*/
 .all-project-cards {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .project-card {

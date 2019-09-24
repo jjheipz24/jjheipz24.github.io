@@ -3,202 +3,146 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,500,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>Jin Jin Heipler</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Load required Bootstrap and BootstrapVue CSS -->
+    <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
+    <!-- Load polyfills to support older browsers -->
+    <script src="//polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver" crossorigin="anonymous">
+    </script>
+    <!-- Load Vue followed by BootstrapVue -->
+    <script src="//unpkg.com/vue@latest/dist/vue.min.js"></script>
+    <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+
+    <!--Font Awesome-->
+    <link href="../media/css/all.css" rel="stylesheet">
+
+    <title>New Index File</title>
 </head>
 
 <body>
-    <!--Navigation bar-->
-    <section id="navbar">
 
-        <a href="index.html"><img class="logo" src="media/logo-small.png" alt="velociraptor with Jin Jin Heipler written on top"></a>
-        <div class="page-nav">
-
-            <!--Dropdown section of nav bar-->
-            <div class="dropdown">
-                <div class="about" title="About" onclick="AboutMenu()">About</div>
-                <div class="about-content" id="dropdownMenu">
-                    <a href="who-am-i.html" title="Who Am I?" id="me">Who Am I?</a>
-                    <a href="contact.html" title="Contact" id="contact">Contact</a>
-                </div>
-            </div>
-            <a href="resume.html" title="Resume" class="resume">Resume</a>
-            <!--Learned bookmark links from W3Schools https://www.w3schools.com/html/html_links.asp-->
-            <a href="#project-heading" title="Home" class="projects">Projects</a>
-        </div>
-
-    </section>
-    <div id="nav-mobile">
-        <!--Hamburger Icon from FontAwesome-->
-        <div class="hamburger"><i class="fas fa-bars fa-3x"></i></div>
-        <div id="menu-mobile">
-
-            <a href="#project-heading" title="Projects">
-                Projects
-            </a>
-            <a href="resume.html" title="Resume">
-                Resume
-            </a>
-            <a href="who-am-i.html" title="Who Am I?">
-                Who Am I?
-            </a>
-            <a href="contact.html" title="Contact">
-                Contact
-            </a>
-
+    <div class="jumbotron" fluid>
+        <div class="container jumbo-container" responsive>
+            <h1 id="title">Jin Jin Heipler</h1>
+            <br>
+            <h2 id="traits">Developer | Designer</h2>
         </div>
     </div>
 
-    <!--Banner-->
-    <header>
-        <div id="banner-content">
-            <img id="headshot" src="media/websiteself.png" alt="headshot image of me">
-            <h1>Hey! I'm Jin Jin</h1>
-            <h4>a new media interactive developer</h4>
-            <!--INSERT IN DOCUMENTATION:<div>Icons made by <a href="https://www.flaticon.com/authors/lucy-g" title="Lucy G">Lucy G</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
-            <img id="down-arrow" src="media/down-arrow.png" alt="down arrow">
-        </div>
-    </header>
+    <b-container id="root" fluid>
 
-    <!--Project gallery-->
-    <main>
-        <h2 id="project-heading">Projects</h2>
-        <div class="project-sqrs">
-            <a href="projects/coin-counter.html" title="Coin Counter">
-                <div class="wrap">
-                    <div class="overlay"></div><img src="projects/projectpics/coin-counter/coinIcon-cover.png" alt="Coin Counter Logo">
-                    <div class="pic-details fadein-top">
-                        <h3>Coin Counter</h3>
-                    </div>
-                </div>
-            </a>
-            <a href="projects/ocean.html" title="Sea What You Did?">
-                <div class="wrap">
-                    <div class="overlay"></div><img src="projects/projectpics/ocean/ocean-cover.png" alt="Front page of ocean project application">
-                    <div class="pic-details fadein-top">
-                        <h3>Sea What You Did?</h3>
-                    </div>
-                </div>
-            </a>
-            <a href="projects/interactive.html" title="Interactive Project">
-                <div class="wrap">
-                    <div class="overlay"></div><img src="projects/projectpics/interactive/fb-cover.png" alt="Facebook mobile screen with exploding words">
-                    <div class="pic-details fadein-top">
-                        <h3>Social Media Burst</h3>
-                    </div>
-                </div>
-            </a>
-            <a href="projects/suicide-awareness.html" title="Suicide Awareness Project">
-                <div class="wrap">
-                    <div class="overlay"></div><img src="projects/projectpics/social-awareness/noose-cover.png" alt="Suicide poster with noose">
-                    <div class="pic-details fadein-top">
-                        <h3>Suicide Awareness</h3>
-                    </div>
-                </div>
-            </a>
-            <a href="projects/brandmark.html" title="Brandmark Project">
-                <div class="wrap">
-                    <div class="overlay"></div><img src="projects/projectpics/brandmark/fruitytootie-cover.png" alt="Fruity Tootie Brandmark Design">
-                    <div class="pic-details fadein-top">
-                        <h3>Fruity Tootie</h3>
-                    </div>
-                </div>
-            </a>
-            <a href="projects/spacewatch.html" title="Space Watch Project">
-                <div class="wrap">
-                    <div class="overlay"></div>
-                    <img src="projects/projectpics/spacewatch/icon-cover.png" alt="Space Watch Design">
-                    <div class="pic-details fadein-top">
-                        <h3>Space Watch</h3>
-                    </div>
-                </div>
-            </a>
-            <a href="projects/golfgame.html" title="Golf Game">
-                <div class="wrap">
-                    <div class="overlay"></div><img src="projects/projectpics/golfgame/minisavage-cover.png" alt="Golf game cover image">
-                    <div class="pic-details fadein-top">
-                        <h3>Mini Savage: Golf Edition</h3>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </main>
-
-    <!--Footer-->
-    <footer>
-        <div class="footer-container">
-            <div class="left">
-                <p>How did I make this?</p>
-                <p>Find out <a href="documentation.html" title="Documentation">here
-                    </a></p>
-            </div>
-            <div class="center">
-                <p>Questions? Email me!</p>
-                <a href="mailto:heipler.jj@gmail.com" title="Email">heipler.jj&commat;gmail.com</a>
-            </div>
-            <div class="right">
-                <p>Social Media</p>
-                <!--ICONS FROM FONTAWESOME.COM-->
-                <div class="icons">
-                    <a href="https://www.facebook.com/jjheipz" title="Facebook Link"> <i class="fab fa-facebook fa-lg"></i></a>
-                    <a href="https://www.instagram.com/jjheipz24" title="Instagram Link"><i class="fab fa-instagram fa-lg"></i></a>
-                    <a href="https://www.linkedin.com/in/jjheipler" title="LinkedIn Link">
-                        <i class="fab fa-linkedin fa-lg"></i>
-                    </a>
-                    <a href="https://www.github.com/jjheipz24" title="GitHub Link"><i class="fab fa-github-square fa-lg"></i></a>
+        <!--ABOUT CARDS-->
+        <b-row class="about">
+            <!--allows for multiple flip cards-->
+            <div class="card-container col-sm-3">
+                <div class="card-flip text-center">
+                    <b-card class="front card">
+                        <b-card-body>
+                            <h2 class="card-title">Goal</h2>
+                            <i class="fas fa-medal fa-7x"></i>
+                        </b-card-body>
+                    </b-card>
+                    <b-card class="back card">
+                        <b-card-body class="info">
+                            <i class="fas fa-medal fa-2x body-icon"></i>
+                            <div id="about-content">
+                                <b-card-text class="about-text">As a new media interactive development major at Rochester Institute of Technology, I aspire to combine my creative and technical skills to develop engaging, interactive experiences for the user.</b-card-text>
+                            </div>
+                        </b-card-body>
+                    </b-card>
                 </div>
             </div>
-        </div>
-    </footer>
 
-    <script>
-        /* Script for dropdown menu from W3Schools (see CSS for link)
-         * When user clicks button, content toggles between shown
-         * and hidden */
-        function AboutMenu() {
-            document.getElementById("dropdownMenu").classList.toggle("show");
-        }
+            <div class="card-container col-sm-3">
+                <div class="card-flip text-center">
+                    <b-card class="front card">
+                        <b-card-body>
+                            <h2 class="card-title">Skills</h2>
+                            <i class="fas fa-code fa-7x"></i>
+                        </b-card-body>
+                    </b-card>
+                    <b-card class="back card">
+                        <b-card-body class="info">
+                            <i class="fas fa-code fa-2x body-icon"></i>
+                            <b-card-text class="about-text">
+                                <h4>Languages: </h4>
+                                <span>HTML5 &amp; CSS, JavaScript, C#, Java</span>
+                                <br /> <br />
+                                <h4>Frameworks/Libraries:</h4>
+                                <span>jQuery, Bootstrap, Vue.js, Angular.js, hexi.js, p5.js</span>
+                            </b-card-text>
+                        </b-card-body>
+                    </b-card>
+                </div>
+            </div>
 
-        //closes dropdown if click outside it
-        window.onclick = function(e) {
-            if (!e.target.matches('.about')) {
-                var myDropdown = document.getElementById("dropdownMenu");
-                if (myDropdown.classList.contains('show')) {
-                    myDropdown.classList.remove('show');
-                }
-            }
-        }
-        /* Script for smooth scrolling used from Juan von Doom on Codepen.io
-         * https://codepen.io/jvondoom/pen/VvbrdY
-         * Scrolls down to project part of page
-         */
-        $(document).ready(function() {
-            $('#down-arrow').click(function() {
-                $('html, body').animate({
-                    scrollTop: $('#project-heading').offset().top
-                }, 700)
-            })
-        });
-        /* Script for hamburger menu used from Glenn Smith on Codepen.io
-         * https://codepen.io/g13nn/pen/eHGEF
-         * Hamburger-style menu for navigation
-         */
-        $(document).ready(function() {
+            <div class="card-container col-sm-3">
+                <div class="card-flip text-center">
+                    <b-card class="front card">
+                        <b-card-body>
+                            <h2 class="card-title">Fun Facts</h2>
+                            <i class="fas fa-user fa-7x"></i>
+                        </b-card-body>
+                    </b-card>
+                    <b-card class="back card">
+                        <b-card-body class="info">
+                            <i class="fas fa-user fa-2x body-icon" id="fun-fact"></i>
+                            <b-card-text class="about-text">
+                                <ul>
+                                    <li>Uses they/them pronouns</li>
+                                    <li>Adopted from China
+                                    <li>Plays rugby</li>
+                                    <li>Has 6 Tattoos</li>
+                                    <li>Cat's name is Cookie Dough</li>
+                                </ul>
+                            </b-card-text>
+                        </b-card-body>
+                    </b-card>
+                </div>
+            </div>
+        </b-row>
 
-            $("#menu-mobile").hide();
-            $(".hamburger").click(function() {
-                $("#menu-mobile").slideToggle("slow", function() {
+        <!--PROJECTS-->
+        <b-row class="projects">
+            <div role="tablist" class="all-project-cards">
+                <div v-for="obj in projects" class="col-lg-6 proj-row">
+                    <div class="project-card">
+                        <div class="proj-cover" v-b-toggle="'accordion-' + obj.tag">
+                            <div class="hovereffect">
+                                <div class="img-container">
+                                    <b-img class="card-img" fluid :src="obj.img"></b-img>
+                                    <div class="overlay">
+                                        <h2>{{obj.title}}</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <b-collapse :id="'accordion-' + obj.tag" accordion="my-accordion" role="tabpanel" class="mt-2">
+                            <b-card>
+                                <b-card-text>
+                                    <p>{{obj.descrip}}</p>
+                                    <span>Created with: {{obj.tech}}</span>
+                                    <br /><br />
+                                    <span><a :href="obj.link">Check it out! </a></span>
+                                </b-card-text>
+                            </b-card>
+                        </b-collapse>
+                    </div>
+                </div>
+            </div>
 
-                });
-            });
+        </b-row>
+    </b-container>
+    <!--main script-->
+    <script src="scripts/components.js"></script>
+    <script src="scripts/main.js"></script>
 
-
-        });
-    </script>
 </body>
 
 </html>
