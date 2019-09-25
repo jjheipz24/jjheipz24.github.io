@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 
     <!-- Load required Bootstrap and BootstrapVue CSS -->
     <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
@@ -51,14 +52,14 @@
         <b-row class="about">
             <!--allows for multiple flip cards-->
             <div class="card-container col-sm-3">
-                <div class="card-flip text-center">
-                    <b-card class="front card">
+                <div class="text-center" id="goals">
+                    <b-card class="front">
                         <b-card-body>
                             <h2 class="card-title">Goal</h2>
                             <i class="fas fa-medal fa-7x"></i>
                         </b-card-body>
                     </b-card>
-                    <b-card class="back card">
+                    <b-card class="back">
                         <b-card-body class="info">
                             <i class="fas fa-medal fa-2x body-icon"></i>
                             <div id="about-content">
@@ -70,14 +71,14 @@
             </div>
 
             <div class="card-container col-sm-3">
-                <div class="card-flip text-center">
-                    <b-card class="front card">
+                <div class="text-center" id="skills">
+                    <b-card class="front">
                         <b-card-body>
                             <h2 class="card-title">Skills</h2>
                             <i class="fas fa-code fa-7x"></i>
                         </b-card-body>
                     </b-card>
-                    <b-card class="back card">
+                    <b-card class="back">
                         <b-card-body class="info">
                             <i class="fas fa-code fa-2x body-icon"></i>
                             <b-card-text class="about-text">
@@ -85,7 +86,7 @@
                                 <span>HTML5 &amp; CSS, JavaScript, C#, Java</span>
                                 <br /> <br />
                                 <h4>Frameworks/Libraries:</h4>
-                                <span>jQuery, Bootstrap, Vue.js, Angular.js, hexi.js, p5.js</span>
+                                <span>Angular, Vue, NodeJS, jQuery, Bootstrap</span>
                             </b-card-text>
                         </b-card-body>
                     </b-card>
@@ -93,14 +94,14 @@
             </div>
 
             <div class="card-container col-sm-3">
-                <div class="card-flip text-center">
-                    <b-card class="front card">
+                <div class="text-center" id="facts">
+                    <b-card class="front">
                         <b-card-body>
                             <h2 class="card-title">Fun Facts</h2>
                             <i class="fas fa-user fa-7x"></i>
                         </b-card-body>
                     </b-card>
-                    <b-card class="back card">
+                    <b-card class="back">
                         <b-card-body class="info">
                             <i class="fas fa-user fa-2x body-icon" id="fun-fact"></i>
                             <b-card-text class="about-text">

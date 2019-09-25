@@ -43,3 +43,13 @@ let app = new Vue({
 $(document).ready(function () {
     $(this).scrollTop(0);
 });
+
+$("#goals").flip({
+    trigger: 'hover'
+});
+$("#skills").flip({
+    trigger: 'hover'
+});
+$("#facts").flip({
+    trigger: 'hover'
+});
