@@ -15,20 +15,28 @@ let app = new Vue({
             {
                 img: 'imgs/CoinCounter.png',
                 title: "Coin Counter",
-                descrip: "A money visualizer web app created by myself and two others at RIT's BrickHackV. This app is geared towards students with special needs to assist with visualizing money and giving change. Fun fact: It won 'Best Multimedia Hack!'",
+                descrip: "A money visualizer web app created at RIT's BrickHackV. This app is geared towards students with special needs to assist with visualizing money and giving change. Fun fact: It won 'Best Multimedia Hack!'",
                 link: "https://jjheipz24.github.io/CoinCounter",
-                tech: "HTML, CSS, Javascript, Bootstrap, animate.js, Three.js, jQuery, Adobe Illustrator, Adobe Photoshop",
+                tech: "HTML, CSS, JavaScript, Bootstrap, animate.js, Three.js, jQuery, Adobe Illustrator, Adobe Photoshop",
                 tag: "coincounter"
             },
 
             {
                 img: 'imgs/ocean.png',
                 title: "Sea What You Did",
-                descrip: "An interactive graphic made by myself and a partner that helps children learn about ocean pollution in a fun, easy way. It addresses the effects of trash, oil, and chemical spills on the plant and animal life of the ocean and on us as humans.",
+                descrip: "An interactive graphic that helps children learn about ocean pollution in a fun, easy way. It addresses the effects of trash, oil, and chemical spills on the plant and animal life of the ocean and on us as humans.",
                 link: "https://jjheipz24.github.io/ocean-project/index.html",
-                tech: "HTML, CSS, Javascript, hexi.js, Particle.js, Adobe Illustrator",
+                tech: "HTML, CSS, JavaScript, hexi.js, Particle.js, Adobe Illustrator",
                 tag: "ocean"
             },
+            {
+                img: 'imgs/bookWatch.png',
+                title: "bookWatch",
+                descrip: "A web application that allows a user to search for a book and get movie recommendations based on the book",
+                link: "https://jjheipz24.github.io/IGME330-Project2/index.html",
+                tech: "HTML, CSS, JavaScript, Vue.js, Bootstrap, OpenLibrary API, Firebase",
+                tag: "bookWatch"
+            }
 
         ]
     },

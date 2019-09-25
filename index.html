@@ -36,20 +36,29 @@
     </div>
 
     <b-container id="root" fluid>
-        <!--<div>
-    <b-nav vertical class="w-25">
-        <b-nav-item active>Home</b-nav-item>
-        <b-nav-item>About</b-nav-item>
-        <b-nav-item>Projects</b-nav-item>
-        <b-nav-item>Contact</b-nav-item>
-        <b-nav-item>Resume</b-nav-item>
-    </b-nav>
-</div> -->
         <b-row>
             <b-alert class="position-fixed fixed-top m-0 rounded-0" style="z-index: 2000;" variant="warning" show>Site Under Construction!</b-alert>
         </b-row>
+        <nav class="floating-menu">
+            <ul class="main-menu">
+                <li>
+                    <a href="#about" class="nav-item">About</a>
+                </li>
+                <li>
+                    <a href="#proj" class="nav-item">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-item">Contact</a>
+                </li>
+                <li>
+                    <a href="Heipler_JinJin_Resume2019.pdf" class="nav-item">Resume</a>
+                </li>
+            </ul>
+            <div class="menu-bg"></div>
+        </nav>
+
         <!--ABOUT CARDS-->
-        <b-row class="about">
+        <b-row class="about" id="about">
             <!--allows for multiple flip cards-->
             <div class="card-container col-sm-3">
                 <div class="text-center" id="goals">
@@ -120,7 +129,7 @@
         </b-row>
 
         <!--PROJECTS-->
-        <b-row class="projects">
+        <b-row class="projects" id="proj">
             <div role="tablist" class="all-project-cards">
                 <div v-for="obj in projects" class="col-lg-6 proj-row">
                     <div class="project-card">
@@ -148,7 +157,7 @@
                 </div>
             </div>
         </b-row>
-        <b-row class="footer-container">
+        <b-row class="footer-container" id="contact">
             <footer>
                 <section class="footer-content">
                     <div class="social-link">
