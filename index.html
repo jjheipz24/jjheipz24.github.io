@@ -148,10 +148,12 @@
                         <b-collapse :id="'accordion-' + obj.tag" accordion="my-accordion" role="tabpanel" class="mt-2">
                             <b-card>
                                 <b-card-text>
-                                    <p>{{obj.descrip}}</p>
-                                    <span>Created with: {{obj.tech}}</span>
-                                    <br /><br />
-                                    <span><a :href="obj.link">Check it out! </a></span>
+                                    <div class="proj-des">
+                                        <p class="proj-text">{{obj.descrip}}</p>
+                                        <span>Created with: {{obj.tech}}</span>
+                                    </div>
+                                    <br />
+                                    <span><a :href="obj.link" class="ex">Check it out! </a></span>
                                 </b-card-text>
                             </b-card>
                         </b-collapse>

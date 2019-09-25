@@ -294,6 +294,33 @@ PROJECTS
     transform: translatey(0);
 }
 
+.card-text {
+    font-family: 'Asap', sans-serif;
+    color: #00223D;
+}
+
+.proj-des {
+    text-align: justify;
+}
+
+.proj-text {
+    font-size: 16px;
+}
+
+.card-text span {
+    font-weight: 600;
+}
+
+.ex {
+    font-size: 18px;
+    text-align: center;
+}
+
+.ex:hover {
+    text-decoration: none;
+    transform: scale(2);
+}
+
 /**********
 FOOTER
 **********/
