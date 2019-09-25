@@ -156,6 +156,7 @@ ABOUT ME CARDS
 
 .body-icon {
     margin-bottom: 25px;
+    color: #00223D;
 }
 
 #fun-fact {
@@ -184,7 +185,7 @@ PROJECTS
     justify-content: center;
     text-align: center;
     background-color: #084766;
-    padding: 90px 0 150px 0;
+    padding: 90px 0 200px 0;
 
 }
 
