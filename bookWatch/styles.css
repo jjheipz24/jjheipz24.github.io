@@ -1,0 +1,160 @@
+header {
+    background: #0599F1;
+    width: 100vw;
+    padding: 20px 10px 20px 10px;
+
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+    color: white;
+}
+
+footer {
+    background: #0599F1;
+    margin-top: 30px;
+    width: 100vw;
+    padding: 20px 10px 10px 10px;
+
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+    color: white;
+}
+
+body {
+    background: #F4F5F5;
+}
+
+
+.searchArea {
+    margin: 20px 20px 30px 50px;
+}
+
+#searchbar {
+    width: 400px;
+}
+
+#searchInput {
+    border-radius: 25px 0px 0px 25px;
+}
+
+#search {
+    width: 80px;
+    margin-left: 20px;
+    text-align: left;
+    border-radius: 0px 25px 25px 0px;
+
+    background-color: #0599F1;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'Questrial', sans-serif;
+}
+
+h3 {
+    font-family: 'Questrial', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.info {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+#limitSel {
+    margin-right: 5px;
+}
+
+#control2 {
+    margin: 25px 10px 15px 10px;
+}
+
+#disclaimer {
+    margin: 10px 10px 10px 10px;
+    font-size: 12px;
+    color: #C0C0C0;
+}
+
+#limit {
+    width: 100px;
+}
+
+.function {
+    width: 100px;
+    background-color: #0599F1;
+}
+
+#movies {
+    height: 70vh;
+    overflow-y: scroll;
+}
+
+#movies::-webkit-scrollbar-track {
+    border: 2px solid #0599F1;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+#movies::-webkit-scrollbar {
+    width: 12px;
+}
+
+#movies::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #0599F1;
+}
+
+#movies::-webkit-scrollbar-thumb:hover {
+    background-color: #0069d9;
+}
+
+#book {
+    padding-right: 3em;
+    margin: 20px 50px 20px 50px;
+    border-right: 2px dotted #0599F1;
+}
+
+#loading {
+    margin-top: 20vh;
+}
+
+.movieIMG {
+    max-width: 100px;
+    margin-top: 5px;
+}
+
+.movieSug {
+    padding: 20px 20px 10px 20px;
+    margin: 15px 25px 15px 0px;
+    background: lightgray;
+    border-radius: 10px;
+}
+
+.movieSug h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.movieSug p {
+    font-size: 14px;
+}
+
+.score {
+    max-height: 18px;
+    margin: 0px 20px 0px 15px;
+    padding-left: 10px;
+    border-left: 2px dotted #0599F1;
+}
+
+#admin-home {
+    padding-top: 50px;
+}
+
+#word-cloud {
+    border-left: 2px dotted #0599F1;
+    padding-left: 2em;
+}
