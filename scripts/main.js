@@ -22,6 +22,15 @@ let app = new Vue({
             },
 
             {
+                img: 'imgs/bookWatch.png',
+                title: "bookWatch",
+                descrip: "A web application that allows a user to search for a book and get movie recommendations based on the book",
+                link: "https://jjheipz24.github.io/IGME330-Project2/index.html",
+                tech: "HTML, CSS, JavaScript, Vue.js, Bootstrap, OpenLibrary API, Firebase",
+                tag: "bookWatch"
+            },
+
+            {
                 img: 'imgs/ocean.png',
                 title: "Sea What You Did",
                 descrip: "An interactive graphic that helps children learn about ocean pollution in a fun, easy way. It addresses the effects of trash, oil, and chemical spills on the plant and animal life of the ocean and on us as humans.",
@@ -29,14 +38,6 @@ let app = new Vue({
                 tech: "HTML, CSS, JavaScript, hexi.js, Particle.js, Adobe Illustrator",
                 tag: "ocean"
             },
-            {
-                img: 'imgs/bookWatch.png',
-                title: "bookWatch",
-                descrip: "A web application that allows a user to search for a book and get movie recommendations based on the book",
-                link: "https://jjheipz24.github.io/IGME330-Project2/index.html",
-                tech: "HTML, CSS, JavaScript, Vue.js, Bootstrap, OpenLibrary API, Firebase",
-                tag: "bookWatch"
-            }
 
         ]
     },
