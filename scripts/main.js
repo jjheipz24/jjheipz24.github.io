@@ -53,6 +53,17 @@ $(document).ready(function () {
     $(this).scrollTop(0);
 });
 
+/*Controls parallax*/
+$(".paroller").paroller();
+$(".jumbo-container").paroller({
+    factor: 0.2,
+    factorXs: 0.2,
+    type: 'foreground',
+    direction: 'vertical'
+});
+
+
+/*Controls card flip*/
 $("#goals").flip({
     trigger: 'hover'
 });
