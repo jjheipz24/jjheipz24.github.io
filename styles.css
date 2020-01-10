@@ -370,3 +370,32 @@ footer a:hover {
 footer p {
     text-align: center;
 }
+
+
+/******************
+    DNA Portal
+******************/
+
+.mm-header {
+    background-image: url(imgs/massmutual.png);
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+}
+
+#first-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 150px 0;
+    background: linear-gradient(to right, #002F6C 60%, white 40%)
+}
+
+#mm-intro{
+    font-family: 'Asap', sans-serif;
+    color: white;
+    font-size: 24px;
+    width: 40%;
+}
+
