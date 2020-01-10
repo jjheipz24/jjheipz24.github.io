@@ -383,16 +383,23 @@ footer p {
     height: 50vh;
 }
 
-#first-row{
+.mm-row{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin: 150px 0;
-    background: linear-gradient(to right, #002F6C 60%, white 40%)
 }
 
-#mm-intro{
+#first-row{
+    background: linear-gradient(to right, #002F6C 60%, white 40%)
+ }
+
+ #second-row{
+    background: linear-gradient(to left, #002F6C 60%, white 40%)
+ }
+
+.mm-text{
     font-family: 'Asap', sans-serif;
     color: white;
     font-size: 24px;
