@@ -4,6 +4,14 @@ let app = new Vue({
     data: {
         projects: [
             {
+                img: 'imgs/birdflu.png',
+                title: "Bird Flu",
+                descrip: "An interactive data visualization of the Avian Influenza and its effects on chickens.",
+                link: "https://jjheipz24.github.io/BirdFlu",
+                tech: "HTML, CSS, JavaScript, D3.js",
+                tag: "birdflu"
+            },
+            {
                 img: 'imgs/shmood.png',
                 title: "shmood",
                 descrip: "A personalized mood board creation site. People can upload their own images to create their mood boards, and they can also see a public mood board on the home page, which is generated from images uploaded by other users.",
