@@ -12,6 +12,14 @@ let app = new Vue({
                 tag: "shmood"
             },
             {
+                img: 'imgs/pillow-talk.png',
+                title: "Pillow Talk",
+                descrip: "A dream tracker application for a user to record their dreams. They are able to view and filter their previous entries by the type of dream.",
+                link: "https://pillow-talk-jj.herokuapp.com/",
+                tech: "HTML, CSS, Vue.js, Node.js, Bootstrap",
+                tag: "pillowtalk"
+            },
+            {
                 img: 'imgs/dna.png',
                 title: "DNA Portal",
                 descrip: "For my internship at MassMutual, I worked on the UI for their Finance Data and Analytics Portal. This portal allows for a more efficient way for use-case owners and businesses to access and report finance data.",
