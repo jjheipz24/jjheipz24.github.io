@@ -62,6 +62,20 @@ $(".jumbo-container").paroller({
     direction: 'vertical'
 });
 
+$(".mm-header").paroller({
+    factor: 0.2,
+    factorXs: 0.2,
+    type: 'foreground',
+    direction: 'vertical'
+});
+
+$(".mm-doc").paroller({
+    factor: 0.2,
+    factorXs: 0.2,
+    type: 'foreground',
+    direction: 'vertical'
+});
+
 
 /*Controls card flip*/
 $("#goals").flip({

@@ -29,7 +29,7 @@
 </head>
 
 <body>
-    <div class="mm-header">
+    <div class="paroller mm-header">
     </div>
 
     <b-container id="root" fluid>
@@ -41,10 +41,10 @@
         <nav class="floating-menu">
             <ul class="main-menu">
                 <li>
-                    <a href="#about" class="nav-item">About</a>
+                    <a href="index.html#about" class="nav-item">About</a>
                 </li>
                 <li>
-                    <a href="#proj" class="nav-item">Projects</a>
+                    <a href="index.html#proj" class="nav-item">Projects</a>
                 </li>
                 <li>
                     <a href="#contact" class="nav-item">Contact</a>
@@ -55,27 +55,42 @@
             </ul>
             <div class="menu-bg"></div>
         </nav>
-        <b-row class="mm-row" id="first-row">
-            <div class="mm-text">
-                <p>At MassMutual, I spent my summer working on the user interface for their Finance Data and Analytics
-                    Portal.
-                    The existing interface was outdated and hard to navigate, so it was my job to make it more
-                    responsive and more user-friendly.</p>
-            </div>
-            <div id="intern-photo"><img id="mm" src="./imgs/mm.JPG"></div>
-        </b-row>
+        <main class="paroller mm-doc">
+            <b-row class="mm-row" id="first-row">
+                <div class="mm-text">
+                    <p>At MassMutual, I spent my summer working on the user interface for their Finance Data and
+                        Analytics
+                        Portal.
+                        The existing interface was outdated and hard to navigate, so it was my job to make it more
+                        responsive and more user-friendly.</p>
+                </div>
+                <div id="intern-photo"><img id="mm" src="./imgs/mm.JPG"></div>
+            </b-row>
 
-        <b-row class="mm-row" id="second-row">
-            <div id="angular"><img id="ang" src="./imgs/Angular.png"></div>
-            <div class="mm-text">
-                <p>Coming into this internship, I had only ever used the Vue framework. 
-                    This DNA portal used Angular, so over the course of about 2 weeks, I taught myself Angular in order to combine
-                    it with my existing HTML, CSS, and Javascript knowledge.
-                </p>
-            </div>
+            <b-row class="mm-row" id="second-row">
+                <div id="sap"><img id="sapImg" src="./imgs/sap.png"></div>
+                <div class="mm-text">
+                    <p>I was originally assigned to the SAP Development team, but with my skills primarily being in
+                        front-end development,
+                        I ultimately worked alongside and under the mentorship of an employee of MassMutual who worked
+                        on
+                        the portal.
+                    </p>
+                </div>
+            </b-row>
 
-        </b-row>
-
+            <b-row class="mm-row" id="third-row">
+                <div class="mm-text">
+                    <p>Coming into this internship, I had only ever used the Vue framework.
+                        This DNA portal used Angular, so over the course of about 2 weeks, I taught myself Angular in
+                        order
+                        to combine
+                        it with my existing HTML, CSS, and Javascript knowledge.
+                    </p>
+                </div>
+                <div id="angular"><img id="ang" src="./imgs/Angular.png"></div>
+            </b-row>
+        </main>
         <b-row class="footer-container" id="contact">
             <footer>
                 <section class="footer-content">

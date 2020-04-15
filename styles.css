@@ -99,6 +99,7 @@ JUMBOTRON
     font-weight: 700;
     font-size: 50px;
     letter-spacing: 3px;
+    text-align: center;
 }
 
 #traits {
@@ -127,6 +128,10 @@ ABOUT ME CARDS
 
 .card-container:hover {
     cursor: pointer;
+}
+
+.about .card {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .about .card-body {
@@ -383,7 +388,7 @@ footer p {
     height: 50vh;
 }
 
-.mm-row{
+.mm-row {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -391,18 +396,19 @@ footer p {
     margin: 150px 0;
 }
 
-#first-row{
-    background: linear-gradient(to right, #002F6C 60%, white 40%)
- }
+#first-row,
+#third-row {
+    background: linear-gradient(to right, #002F6C 60%, white 40%);
+    
+}
 
- #second-row{
+#second-row {
     background: linear-gradient(to left, #002F6C 60%, white 40%)
- }
+}
 
-.mm-text{
+.mm-text {
     font-family: 'Asap', sans-serif;
     color: white;
     font-size: 24px;
     width: 40%;
 }
-
