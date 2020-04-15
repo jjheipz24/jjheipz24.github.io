@@ -4,6 +4,14 @@ let app = new Vue({
     data: {
         projects: [
             {
+                img: 'imgs/shmood.png',
+                title: "shmood",
+                descrip: "A personalized mood board creation site. People can upload their own images to create their mood boards, and they can also see a public mood board on the home page, which is generated from images uploaded by other users.",
+                link: "https://shmood.herokuapp.com/",
+                tech: "HTML, CSS, React, Node.js, Redis, mongoDB, Handlebars, Bootstrap, Express",
+                tag: "shmood"
+            },
+            {
                 img: 'imgs/dna.png',
                 title: "DNA Portal",
                 descrip: "For my internship at MassMutual, I worked on the UI for their Finance Data and Analytics Portal. This portal allows for a more efficient way for use-case owners and businesses to access and report finance data.",
@@ -26,7 +34,7 @@ let app = new Vue({
                 title: "bookWatch",
                 descrip: "A web application that allows a user to search for a book and get movie recommendations based on the book",
                 link: "https://jjheipz24.github.io/IGME330-Project2/index.html",
-                tech: "HTML, CSS, JavaScript, Vue.js, Bootstrap, OpenLibrary API, Firebase",
+                tech: "HTML, CSS, JavaScript, Vue.js, Bootstrap, OpenLibrary API, TasteDive API, OMDb API, Firebase",
                 tag: "bookWatch"
             },
 
