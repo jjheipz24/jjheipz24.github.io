@@ -4,6 +4,14 @@ let app = new Vue({
     data: {
         projects: [
             {
+                img: 'imgs/hatecrimes.png',
+                title: "2018 Hate Crimes",
+                descrip: "An interactive data visualization of the hate crimes in the U.S. in 2018.",
+                link: "https://jjheipz24.github.io/2018HateCrimes/",
+                tech: "HTML, CSS, JavaScript, D3.js",
+                tag: "hatecrimes"
+            },
+            {
                 img: 'imgs/birdflu.png',
                 title: "Bird Flu",
                 descrip: "An interactive data visualization of the Avian Influenza and its effects on chickens.",
