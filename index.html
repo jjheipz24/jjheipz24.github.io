@@ -12,15 +12,19 @@
     <script src="./scripts/jquery.paroller.min.js"></script>
     <!--tgomilar.github.io/paroller.js-->
 
-    <!-- Load required Bootstrap and BootstrapVue CSS -->
-    <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
-    <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
-    <!-- Load polyfills to support older browsers -->
-    <script src="//polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver" crossorigin="anonymous">
-    </script>
-    <!-- Load Vue followed by BootstrapVue -->
-    <script src="//unpkg.com/vue@latest/dist/vue.min.js"></script>
-    <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+<!-- Load required Bootstrap and BootstrapVue CSS -->
+<link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+<link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
+
+<!-- Load polyfills to support older browsers -->
+<script src="//polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver" crossorigin="anonymous"></script>
+
+<!-- Load Vue followed by BootstrapVue -->
+<script src="//unpkg.com/vue@latest/dist/vue.min.js"></script>
+<script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+
+<!-- Load the following for BootstrapVueIcons support -->
+<script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue-icons.min.js"></script>
 
     <!--Font Awesome-->
     <link href="./Old/media/css/all.css" rel="stylesheet">
@@ -35,7 +39,7 @@
             <h1 id="title">Jin Jin Heipler</h1>
             <br>
             <h2 id="traits">Front-end Developer</h2>
-     
+
         </div>
     </div>
 
@@ -45,7 +49,7 @@
             <b-alert class="position-fixed fixed-top m-0 rounded-0" style="z-index: 2000;" variant="warning" show>Site Under Construction!</b-alert>
         </b-row>
 -->
-        <nav class="floating-menu">
+        <!--<nav class="floating-menu">
             <ul class="main-menu">
                 <li>
                     <a href="#about" class="nav-item">About</a>
@@ -61,7 +65,29 @@
                 </li>
             </ul>
             <div class="menu-bg"></div>
-        </nav>
+        </nav>-->
+
+        <div>
+            <b-button v-b-toggle.sidebar-right>Menu</b-button>
+            <b-sidebar id="sidebar-right" title="Sidebar" right shadow>
+                <div class="px-3 py-2">
+                    <ul class="main-menu">
+                        <li>
+                            <a href="#about" class="nav-item">About</a>
+                        </li>
+                        <li>
+                            <a href="#proj" class="nav-item">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="nav-item">Contact</a>
+                        </li>
+                        <li>
+                            <a href="Heipler_JinJin_Resume2020.pdf" class="nav-item">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </b-sidebar>
+        </div>
 
         <!--ABOUT CARDS-->
         <b-row class="about" id="about" responsive><a name="about"></a>
@@ -78,7 +104,9 @@
                         <b-card-body class="info">
                             <i class="fas fa-medal fa-2x body-icon"></i>
                             <div id="about-content">
-                                <b-card-text class="about-text">As a New Media Interactive Development major at the Rochester Institute of Technology, I aspire to combine my creative and technical skills to develop engaging, interactive experiences for the user.</b-card-text>
+                                <b-card-text class="about-text">As a New Media Interactive Development major at the
+                                    Rochester Institute of Technology, I aspire to combine my creative and technical
+                                    skills to develop engaging, interactive experiences for the user.</b-card-text>
                             </div>
                         </b-card-body>
                     </b-card>
@@ -170,16 +198,19 @@
             <footer>
                 <section class="footer-content">
                     <div class="social-link">
-                        <a href="https://www.linkedin.com/in/jjheipler" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i>
+                        <a href="https://www.linkedin.com/in/jjheipler" title="LinkedIn"><i
+                                class="fab fa-linkedin fa-2x"></i>
                         </a>
-                        <a href="https://www.facebook.com/jjheipz" title="Facebook"><i class="fab fa-facebook-square fa-2x"></i>
+                        <a href="https://www.facebook.com/jjheipz" title="Facebook"><i
+                                class="fab fa-facebook-square fa-2x"></i>
                         </a>
-                        <a href="https://www.github.com/jjheipz24" title="Github"><i class="fab fa-github-square fa-2x"></i>
+                        <a href="https://www.github.com/jjheipz24" title="Github"><i
+                                class="fab fa-github-square fa-2x"></i>
                         </a>
                         <a href="mailto:heipler.jj@gmail.com" title="Email"><i class="fas fa-envelope-square fa-2x"></i>
                         </a>
                     </div>
-                    <p>&copy; 2019 Jin Jin Heipler</p>
+                    <p>&copy; 2020 Jin Jin Heipler</p>
                 </section>
             </footer>
         </b-row>
