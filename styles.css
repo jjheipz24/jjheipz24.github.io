@@ -39,7 +39,7 @@ NAV
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+
 }
 
 .main-menu {
@@ -50,7 +50,8 @@ NAV
 }
 
 .main-menu li {
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
 }
 
 .main-menu li a {
