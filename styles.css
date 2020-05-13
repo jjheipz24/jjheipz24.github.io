@@ -30,10 +30,9 @@ NAV
 }
 
 #sidebar-right {
-    top: 10%;
     width: 175px;
-    max-height: 300px;
-    border-radius: 10px 0 0 10px;
+    /*max-height: 325px;
+    border-radius: 10px 0 0 10px;*/
 }
 
 .sidebar-container {
