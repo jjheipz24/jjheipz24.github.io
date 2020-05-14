@@ -375,7 +375,7 @@ footer p {
     DNA Portal
 ******************/
 
-.mm-header {
+/*.mm-header {
     background-image: url(imgs/massmutual.png);
     background-size: cover;
     width: 100%;
@@ -405,4 +405,18 @@ footer p {
     color: white;
     font-size: 24px;
     width: 40%;
+}*/
+
+#mm {
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header"
+        ". main ."
+        "footer footer footer";
+}
+
+#mm .footer-container {
+    grid-area: footer;
 }
