@@ -408,13 +408,25 @@ footer p {
 }*/
 
 #mm {
+    width: 100%;
     display: grid;
-    grid-template-columns: 50px auto 50px;
+    grid-template-columns: 20px auto 50px auto 20px;
     grid-template-rows: auto;
     grid-template-areas:
-        "header header header"
-        ". main ."
-        "footer footer footer";
+        "header header header header header"
+        "footer footer footer footer footer";
+}
+
+#mm-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    background-color: #002F6C;
+    grid-area: header;
+}
+#mm-img{
+    max-width: 100%;
 }
 
 #mm .footer-container {
