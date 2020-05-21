@@ -2,8 +2,7 @@
 let app = new Vue({
     el: '#root',
     data: {
-        projects: [
-            {
+        projects: [{
                 img: 'imgs/hatecrimes.png',
                 title: "2018 Hate Crimes",
                 descrip: "An interactive data visualization of the hate crimes in the U.S. in 2018.",
@@ -94,7 +93,7 @@ $(".jumbo-container").paroller({
     direction: 'vertical'
 });
 
-$(".mm-header").paroller({
+/*$(".mm-header").paroller({
     factor: 0.2,
     factorXs: 0.2,
     type: 'foreground',
@@ -106,19 +105,18 @@ $(".mm-doc").paroller({
     factorXs: 0.2,
     type: 'foreground',
     direction: 'vertical'
-});
+});*/
 
-$('a[href*="#"]').on('click', function(e) {
+$('a[href*="#"]').on('click', function (e) {
     e.preventDefault()
-  
-    $('html, body').animate(
-      {
-        scrollTop: $($(this).attr('href')).offset().top,
-      },
-      400,
-      'linear'
+
+    $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top,
+        },
+        400,
+        'linear'
     )
-  })
+})
 
 
 /*Controls card flip*/

@@ -409,12 +409,17 @@ footer p {
 
 #mm {
     width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: 20px auto 50px auto 20px;
     grid-template-rows: auto;
     grid-template-areas:
         "header header header header header"
+        ". first first first ."
+        ". second second second ."
+        ". third third third ."
         "footer footer footer footer footer";
+    grid-auto-flow: column;
 }
 
 #mm-header {
@@ -422,13 +427,57 @@ footer p {
     flex-direction: row;
     justify-content: center;
     padding: 20px;
+    margin-bottom: 50px;
     background-color: #002F6C;
     grid-area: header;
 }
-#mm-img{
+
+#mm-img {
     max-width: 100%;
+}
+
+#first {
+    grid-area: first;
+}
+
+#second {
+    grid-area: second;
+}
+
+#third{
+    grid-area: third;
+}
+
+.leftText, .rightText{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.mm-text {
+    background-color: #002F6C;
+    color: white;
+    width: 50vw;
+    padding: 50px 20px;
+    margin-right: 25px;
+    font-family: 'Asap', sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.mm-pic-div {
+    width: 30vw;
+
+}
+
+.mm-pics {
+    max-width: 100%;
+    border-radius: 5px;
 }
 
 #mm .footer-container {
     grid-area: footer;
+    margin-top: 100px;
 }
