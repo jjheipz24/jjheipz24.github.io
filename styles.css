@@ -418,15 +418,17 @@ footer p {
         ". first first first ."
         ". second second second ."
         ". third third third ."
+        ". fourth fourth fourth ."
         "footer footer footer footer footer";
     grid-auto-flow: column;
 }
 
 #mm-header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    align-items: center;
+    padding: 35vh 20px;
     margin-bottom: 50px;
     background-color: #002F6C;
     grid-area: header;
@@ -446,6 +448,10 @@ footer p {
 
 #third{
     grid-area: third;
+}
+
+#fourth{
+    grid-area: fourth;
 }
 
 .leftText, .rightText{
@@ -470,6 +476,10 @@ footer p {
 .mm-pic-div {
     width: 30vw;
 
+}
+
+#lock{
+    width: 250px;
 }
 
 .mm-pics {
