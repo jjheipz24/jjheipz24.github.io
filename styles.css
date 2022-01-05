@@ -75,7 +75,8 @@ JUMBOTRON
     background-image: url(imgs/universe-jumbotron.jpg);
     background-size: cover;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
+    margin-bottom: 8em;
 }
 
 .jumbo-container {
@@ -113,7 +114,7 @@ ABOUT ME CARDS
     justify-content: space-evenly;
     background-color: white;
     min-height: 100%;
-    margin: 150px 0;
+    margin-bottom: 8em;
 }
 
 .card-container {

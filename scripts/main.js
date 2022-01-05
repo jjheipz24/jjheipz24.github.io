@@ -3,6 +3,14 @@ let app = new Vue({
     el: '#root',
     data: {
         projects: [{
+                img: 'imgs/sprout-main.png',
+                title: 'Sprout',
+                descrip: "A full-stack application where users can grow virtual gardens by sending and receiving positive messages.",
+                link: "https://sprout-community.com",
+                tech: "React, Pixi.js, Node.js, HTML, SCSS, Figma, Illustrator, After Effects",
+                tag: "sprout"
+            },
+            {
                 img: 'imgs/hatecrimes.png',
                 title: "2018 Hate Crimes",
                 descrip: "An interactive data visualization of the hate crimes in the U.S. in 2018.",
